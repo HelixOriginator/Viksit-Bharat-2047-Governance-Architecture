@@ -19,11 +19,7 @@
 --transition: all 0.3s ease;
 }
 
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
+* { margin:0; padding:0; box-sizing:border-box; }
 
 body {
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -34,155 +30,139 @@ overflow-x: hidden;
 }
 
 .container {
-width: 100%;
-max-width: 1200px;
-margin: 0 auto;
-padding: 0 20px;
+width:100%;
+max-width:1200px;
+margin:0 auto;
+padding:0 20px;
 }
 
-h1, h2, h3, h4 {
-font-weight: 700;
-line-height: 1.2;
-color: var(--deep-navy);
+h1,h2,h3,h4 {
+font-weight:700;
+line-height:1.2;
+color:var(--deep-navy);
 }
 
-p {
-margin-bottom: 1rem;
-font-size: 1.1rem;
-}
+p { margin-bottom:1rem; font-size:1.1rem; }
 
 .btn {
-display: inline-block;
-padding: 15px 30px;
-background: linear-gradient(135deg, var(--sovereign-gold), var(--emerald-accent));
-color: var(--soft-white);
-border-radius: 50px;
-text-decoration: none;
-font-weight: 600;
-text-transform: uppercase;
-letter-spacing: 1px;
-transition: var(--transition);
-border: none;
-cursor: pointer;
-box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+display:inline-block;
+padding:15px 30px;
+background:linear-gradient(135deg,var(--sovereign-gold),var(--emerald-accent));
+color:var(--soft-white);
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
+text-transform:uppercase;
+letter-spacing:1px;
+transition:var(--transition);
+border:none;
+cursor:pointer;
 }
 
 .btn:hover {
-transform: translateY(-5px);
-box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+transform:translateY(-5px);
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
 }
 
-.section {
-padding: 80px 0;
-}
+.section { padding:80px 0; }
 
 .section-title {
-text-align: center;
-margin-bottom: 60px;
-position: relative;
+text-align:center;
+margin-bottom:60px;
+position:relative;
 }
 
 .section-title::after {
-content: '';
-position: absolute;
-bottom: -15px;
-left: 50%;
-transform: translateX(-50%);
-width: 150px;
-height: 4px;
-background: linear-gradient(to right, var(--sovereign-gold), var(--emerald-accent));
-border-radius: 2px;
+content:'';
+position:absolute;
+bottom:-15px;
+left:50%;
+transform:translateX(-50%);
+width:150px;
+height:4px;
+background:linear-gradient(to right,var(--sovereign-gold),var(--emerald-accent));
+border-radius:2px;
 }
 
 header {
-background: var(--deep-navy);
-color: var(--soft-white);
-padding: 20px 0;
-position: fixed;
-width: 100%;
-top: 0;
-z-index: 1000;
+background:var(--deep-navy);
+color:var(--soft-white);
+padding:20px 0;
+position:fixed;
+width:100%;
+top:0;
+z-index:1000;
 }
 
 .header-container {
-display: flex;
-justify-content: space-between;
-align-items: center;
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
 .logo {
-font-size: 1.8rem;
-font-weight: 700;
-color: var(--soft-white);
-text-decoration: none;
+font-size:1.8rem;
+font-weight:700;
+color:var(--soft-white);
+text-decoration:none;
 }
 
-.logo span {
-color: var(--sovereign-gold);
-}
+.logo span { color:var(--sovereign-gold); }
 
 .hero {
-background: linear-gradient(rgba(11,31,58,0.95), rgba(19,46,87,0.9)), url('https://images.unsplash.com/photo-1620878439129-177b2d18864c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
-background-size: cover;
-background-position: center;
-color: var(--soft-white);
-padding: 180px 0 120px;
-text-align: center;
+background:linear-gradient(rgba(11,31,58,0.95),rgba(19,46,87,0.9)),
+url('https://images.unsplash.com/photo-1620878439129-177b2d18864c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+background-size:cover;
+background-position:center;
+color:var(--soft-white);
+padding:180px 0 120px;
+text-align:center;
 }
 
-.hero h1 {
-font-size: 3.5rem;
-color: var(--soft-white);
-margin-bottom: 20px;
-}
+.hero h1 { font-size:3.5rem; margin-bottom:20px; }
 
 .hero-subtitle {
-font-size: 1.8rem;
-max-width: 900px;
-margin: 0 auto 40px;
-font-weight: 300;
+font-size:1.8rem;
+max-width:900px;
+margin:0 auto 40px;
+font-weight:300;
 }
 
 .hero-author {
-font-size: 1.3rem;
-margin-bottom: 40px;
-font-style: italic;
+font-size:1.3rem;
+margin-bottom:40px;
+font-style:italic;
 }
 
 .platforms-grid,
-.features-grid,
 .footer-content {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-gap: 30px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
 }
 
-.platform-card,
-.feature-card {
-background: var(--soft-white);
-border-radius: 12px;
-padding: 30px;
-box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-transition: var(--transition);
+.platform-card {
+background:var(--soft-white);
+border-radius:12px;
+padding:30px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+transition:var(--transition);
 }
 
-.platform-card:hover,
-.feature-card:hover {
-transform: translateY(-10px);
-}
+.platform-card:hover { transform:translateY(-10px); }
 
 footer {
-background: var(--deep-navy);
-color: var(--soft-white);
-padding: 60px 0 30px;
+background:var(--deep-navy);
+color:var(--soft-white);
+padding:60px 0 30px;
 }
 
 .copyright {
-text-align: center;
-padding-top: 30px;
-border-top: 1px solid rgba(255,255,255,0.1);
-font-size: 0.9rem;
-color: rgba(255,255,255,0.7);
+text-align:center;
+padding-top:30px;
+border-top:1px solid rgba(255,255,255,0.1);
+font-size:0.9rem;
+color:rgba(255,255,255,0.7);
 }
 </style>
 </head>
@@ -238,6 +218,23 @@ Kallol Chakrabarti | Global Governance Architect | Civilisational Systems Theori
 <a href="https://helixoriginator.github.io/bharat-governance-transformation-2014-2025/" target="_blank" class="btn">Explore Transformation</a>
 </div>
 
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title">Pioneer Governance Frameworks</h2>
+<p style="max-width:900px;margin:0 auto 25px;text-align:center;">
+The Pioneer Frameworks consolidate independently developed governance doctrines integrating civilisational ethics, AI-state systems, and sovereign institutional design.
+</p>
+<p style="max-width:900px;margin:0 auto 40px;text-align:center;">
+Positioned at the frontier of global governance innovation, these frameworks contribute scalable, research-backed models for ethical statecraft across democracies worldwide.
+</p>
+<div style="text-align:center;">
+<a href="https://helixoriginator.github.io/Pioneer-Frameworks-Kallol-Chakrabarti/" target="_blank" class="btn">
+Explore Pioneer Frameworks
+</a>
 </div>
 </div>
 </section>
