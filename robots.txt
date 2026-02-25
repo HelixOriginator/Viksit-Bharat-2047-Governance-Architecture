@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://helixoriginator.github.io/Viksit-Bharat-2047-Governance-Architecture/sitemap.xml
