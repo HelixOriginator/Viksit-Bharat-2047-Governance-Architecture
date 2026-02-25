@@ -1,508 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Civilisational Governance Architecture | Kallol Chakrabarti</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        /* Global Styles */
-        :root {
-            --saffron: #FF9933;
-            --emerald: #046307;
-            --navy: #0F2C59;
-            --light-navy: #1a3a6c;
-            --white: #FFFFFF;
-            --light-gray: #f8f9fa;
-            --dark-gray: #343a40;
-            --transition: all 0.3s ease;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: var(--light-gray);
-            overflow-x: hidden;
-        }
-        
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        h1, h2, h3, h4 {
-            font-weight: 700;
-            line-height: 1.2;
-            color: var(--navy);
-        }
-        
-        p {
-            margin-bottom: 1rem;
-            font-size: 1.1rem;
-        }
-        
-        .btn {
-            display: inline-block;
-            padding: 15px 30px;
-            background: linear-gradient(135deg, var(--saffron), var(--emerald));
-            color: var(--white);
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: var(--transition);
-            border: none;
-            cursor: pointer;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            position: relative;
-            overflow: hidden;
-            z-index: 1;
-        }
-        
-        .btn:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-        }
-        
-        .btn::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-            transition: 0.5s;
-            z-index: -1;
-        }
-        
-        .btn:hover::before {
-            left: 100%;
-        }
-        
-        .section {
-            padding: 80px 0;
-        }
-        
-        .section-title {
-            text-align: center;
-            margin-bottom: 60px;
-            position: relative;
-        }
-        
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -15px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 150px;
-            height: 4px;
-            background: linear-gradient(to right, var(--saffron), var(--emerald));
-            border-radius: 2px;
-        }
-        
-        /* Header Styles */
-        header {
-            background: var(--navy);
-            color: var(--white);
-            padding: 20px 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--white);
-            text-decoration: none;
-        }
-        
-        .logo span {
-            color: var(--saffron);
-        }
-        
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(rgba(15, 44, 89, 0.9), rgba(15, 44, 89, 0.8)), url('https://images.unsplash.com/photo-1620878439129-177b2d18864c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
-            background-size: cover;
-            background-position: center;
-            color: var(--white);
-            padding: 180px 0 120px;
-            text-align: center;
-        }
-        
-        .hero h1 {
-            font-size: 3.5rem;
-            color: var(--white);
-            margin-bottom: 20px;
-            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
-        }
-        
-        .hero-subtitle {
-            font-size: 1.8rem;
-            max-width: 900px;
-            margin: 0 auto 40px;
-            font-weight: 300;
-        }
-        
-        .hero-author {
-            font-size: 1.4rem;
-            margin-bottom: 40px;
-            font-style: italic;
-        }
-        
-        /* Flagship Platforms Section */
-        .platforms-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
-        }
-        
-        .platform-card {
-            background: var(--white);
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-            transition: var(--transition);
-            position: relative;
-        }
-        
-        .platform-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
-        }
-        
-        .platform-content {
-            padding: 30px;
-            position: relative;
-            z-index: 2;
-        }
-        
-        .platform-content h3 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-            color: var(--navy);
-        }
-        
-        .platform-link {
-            display: block;
-            margin-top: 20px;
-        }
-        
-        .platform-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, rgba(255,153,51,0.1), rgba(4,99,7,0.1));
-            z-index: 1;
-        }
-        
-        /* Section 3 - Transformational Governance */
-        .transformational {
-            background: var(--light-navy);
-            color: var(--white);
-        }
-        
-        .transformational h2 {
-            color: var(--white);
-        }
-        
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-        }
-        
-        .feature-card {
-            background: rgba(255,255,255,0.1);
-            padding: 30px;
-            border-radius: 10px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.2);
-        }
-        
-        /* Section 4 - Civilisational State Architecture */
-        .civilisational {
-            background: linear-gradient(to bottom, var(--light-gray), #e6f0ff);
-        }
-        
-        /* Value Proposition */
-        .value-proposition ul {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 40px;
-        }
-        
-        .value-proposition li {
-            background: var(--white);
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            list-style: none;
-            position: relative;
-        }
-        
-        .value-proposition li::before {
-            content: '✓';
-            color: var(--emerald);
-            font-weight: bold;
-            position: absolute;
-            top: 15px;
-            right: 15px;
-        }
-        
-        /* Footer */
-        footer {
-            background: var(--navy);
-            color: var(--white);
-            padding: 60px 0 30px;
-        }
-        
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-        
-        .copyright {
-            text-align: center;
-            padding-top: 30px;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            font-size: 0.9rem;
-            color: rgba(255,255,255,0.7);
-        }
-        
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-            
-            .hero-subtitle {
-                font-size: 1.3rem;
-            }
-            
-            .section {
-                padding: 60px 0;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Civilisational Governance Architecture | Kallol Chakrabarti</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+:root {
+--deep-navy: #0B1F3A;
+--royal-navy: #132E57;
+--platinum: #F4F6F8;
+--charcoal: #1C1F26;
+--sovereign-gold: #C6A54A;
+--emerald-accent: #0C5B3F;
+--soft-white: #FFFFFF;
+--muted-gray: #E6E8EB;
+--transition: all 0.3s ease;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+line-height: 1.6;
+color: var(--charcoal);
+background-color: var(--platinum);
+overflow-x: hidden;
+}
+
+.container {
+width: 100%;
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 20px;
+}
+
+h1, h2, h3, h4 {
+font-weight: 700;
+line-height: 1.2;
+color: var(--deep-navy);
+}
+
+p {
+margin-bottom: 1rem;
+font-size: 1.1rem;
+}
+
+.btn {
+display: inline-block;
+padding: 15px 30px;
+background: linear-gradient(135deg, var(--sovereign-gold), var(--emerald-accent));
+color: var(--soft-white);
+border-radius: 50px;
+text-decoration: none;
+font-weight: 600;
+text-transform: uppercase;
+letter-spacing: 1px;
+transition: var(--transition);
+border: none;
+cursor: pointer;
+box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.section {
+padding: 80px 0;
+}
+
+.section-title {
+text-align: center;
+margin-bottom: 60px;
+position: relative;
+}
+
+.section-title::after {
+content: '';
+position: absolute;
+bottom: -15px;
+left: 50%;
+transform: translateX(-50%);
+width: 150px;
+height: 4px;
+background: linear-gradient(to right, var(--sovereign-gold), var(--emerald-accent));
+border-radius: 2px;
+}
+
+header {
+background: var(--deep-navy);
+color: var(--soft-white);
+padding: 20px 0;
+position: fixed;
+width: 100%;
+top: 0;
+z-index: 1000;
+}
+
+.header-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.logo {
+font-size: 1.8rem;
+font-weight: 700;
+color: var(--soft-white);
+text-decoration: none;
+}
+
+.logo span {
+color: var(--sovereign-gold);
+}
+
+.hero {
+background: linear-gradient(rgba(11,31,58,0.95), rgba(19,46,87,0.9)), url('https://images.unsplash.com/photo-1620878439129-177b2d18864c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+background-size: cover;
+background-position: center;
+color: var(--soft-white);
+padding: 180px 0 120px;
+text-align: center;
+}
+
+.hero h1 {
+font-size: 3.5rem;
+color: var(--soft-white);
+margin-bottom: 20px;
+}
+
+.hero-subtitle {
+font-size: 1.8rem;
+max-width: 900px;
+margin: 0 auto 40px;
+font-weight: 300;
+}
+
+.hero-author {
+font-size: 1.3rem;
+margin-bottom: 40px;
+font-style: italic;
+}
+
+.platforms-grid,
+.features-grid,
+.footer-content {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 30px;
+}
+
+.platform-card,
+.feature-card {
+background: var(--soft-white);
+border-radius: 12px;
+padding: 30px;
+box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+transition: var(--transition);
+}
+
+.platform-card:hover,
+.feature-card:hover {
+transform: translateY(-10px);
+}
+
+.transformational {
+background: var(--royal-navy);
+color: var(--soft-white);
+}
+
+.transformational h2 {
+color: var(--soft-white);
+}
+
+.civilisational {
+background: linear-gradient(to bottom, var(--platinum), #e8edf5);
+}
+
+.value-proposition ul {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 20px;
+margin-top: 40px;
+}
+
+.value-proposition li {
+background: var(--soft-white);
+padding: 25px;
+border-radius: 10px;
+box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+list-style: none;
+}
+
+footer {
+background: var(--deep-navy);
+color: var(--soft-white);
+padding: 60px 0 30px;
+}
+
+.copyright {
+text-align: center;
+padding-top: 30px;
+border-top: 1px solid rgba(255,255,255,0.1);
+font-size: 0.9rem;
+color: rgba(255,255,255,0.7);
+}
+
+@media (max-width: 768px) {
+.hero h1 { font-size: 2.5rem; }
+.hero-subtitle { font-size: 1.3rem; }
+.section { padding: 60px 0; }
+}
+</style>
 </head>
+
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container header-container">
-            <a href="#" class="logo">Governance<span>Architecture</span></a>
-        </div>
-    </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>A Unified Governance Architecture for Viksit Bharat 2047</h1>
-            <p class="hero-subtitle">An integrated doctrine combining AI-enabled governance, citizen data sovereignty, civilisational ethics, institutional stability, and national development systems</p>
-            <p class="hero-author">Kallol Chakrabarti | Independent Governance Architect & Civilisational Systems Researcher | Lucknow, Uttar Pradesh, India</p>
-            <a href="#platforms" class="btn">Explore the Complete Governance Architecture</a>
-        </div>
-    </section>
+<header>
+<div class="container header-container">
+<a href="#" class="logo">Governance<span>Architecture</span></a>
+</div>
+</header>
 
-    <!-- Section 1: Flagship Civilisational Governance Platforms -->
-    <section class="section" id="platforms">
-        <div class="container">
-            <h2 class="section-title">Foundational Governance & Civilisational Architectures</h2>
-            <p class="text-center" style="max-width: 900px; margin: 0 auto 50px;">
-                These platforms represent independently developed governance architectures integrating digital sovereignty, citizen literacy, civilisational continuity, and systems-based policy innovation.
-            </p>
-            
-            <div class="platforms-grid">
-                <!-- Platform 1 -->
-                <div class="platform-card">
-                    <div class="platform-content">
-                        <h3>PMAY Policy Clarification AI</h3>
-                        <p>AI-powered platform that demystifies Pradhan Mantri Awas Yojana policies, making housing schemes accessible and understandable to all eligible citizens.</p>
-                        <a href="https://helixoriginator.github.io/pmay-policy-clarification-ai/#explainer" target="_blank" class="btn">Explore Platform</a>
-                    </div>
-                </div>
-                
-                <!-- Platform 2 -->
-                <div class="platform-card">
-                    <div class="platform-content">
-                        <h3>Concept Architect</h3>
-                        <p>Advanced conceptualization framework for designing governance systems that integrate traditional wisdom with modern administrative practices.</p>
-                        <a href="https://helixoriginator.github.io/concept-architect/" target="_blank" class="btn">Explore Platform</a>
-                    </div>
-                </div>
-                
-                <!-- Platform 3 -->
-                <div class="platform-card">
-                    <div class="platform-content">
-                        <h3>Dharma-State Architecture</h3>
-                        <p>A Sanatan Framework for Civilisational Governance that establishes ethical governance logic within constitutional democracy.</p>
-                        <a href="://helixoriginator.github.io/Dharma-State-Architecture-A-Sanatan-Framework-for-Civilisational-Governance/" target="_blank" class="btn">Explore Framework</a>
-                    </div>
-                </div>
-                
-                <!-- Platform 4 -->
-                <div class="platform-card">
-                    <div class="platform-content">
-                        <h3>Bharat Governance Transformation 2014–2025</h3>
-                        <p>Comprehensive analysis of governance transformation initiatives and their impact on India's development trajectory.</p>
-                        <a href="https://helixoriginator.github.io/bharat-governance-transformation-2014-2025/" target="_blank" class="btn">Explore Transformation</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="hero">
+<div class="container">
+<h1>A Unified Governance Architecture for Viksit Bharat 2047</h1>
+<p class="hero-subtitle">
+An integrated doctrine combining AI-enabled governance, citizen data sovereignty, civilisational ethics, institutional stability, and national development systems.
+</p>
+<p class="hero-author">
+Kallol Chakrabarti | Global Governance Architect | Civilisational Systems Theorist | AI-State Framework Pioneer
+</p>
+<a href="#platforms" class="btn">Explore the Complete Governance Architecture</a>
+</div>
+</section>
 
-    <!-- Section 3: Transformational Governance Innovation -->
-    <section class="section transformational">
-        <div class="container">
-            <h2 class="section-title">Architecting the Future State</h2>
-            <p style="margin-bottom: 40px; max-width: 900px; margin-left: auto; margin-right: auto;">
-                Our work introduces independently developed, scalable governance blueprints designed to strengthen digital sovereignty, reduce informational asymmetry, and enhance citizen trust. These innovations focus on reducing governance opacity and strengthening institutional credibility.
-            </p>
-            
-            <div class="features-grid">
-                <div class="feature-card">
-                    <h3>AI-Integrated Policy Decision Support</h3>
-                    <p>Advanced systems that combine artificial intelligence with human expertise for evidence-based policy formulation.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <h3>Citizen-Controlled National Data Vault</h3>
-                    <p>Secure architecture that gives citizens ownership and control over their personal data while enabling public service delivery.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <h3>Outcome-Based Public Expenditure</h3>
-                    <p>Marketplace models for government spending that prioritize measurable outcomes over inputs.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <h3>Civic Reflexivity Feedback Engines</h3>
-                    <p>Real-time systems that capture citizen feedback and transform it into actionable governance insights.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="section" id="platforms">
+<div class="container">
+<h2 class="section-title">Foundational Governance & Civilisational Architectures</h2>
 
-    <!-- Section 4: Civilisational State Architecture -->
-    <section class="section civilisational">
-        <div class="container">
-            <h2 class="section-title">Sanatan Dharma as Civilisational Governance Infrastructure</h2>
-            <p style="max-width: 900px; margin: 0 auto 30px;">
-                This framework explores Dharma as ethical governance logic within a constitutional democracy. It integrates civilisational continuity, indigenous economic ethics, and cultural preservation aligned with modern governance needs.
-            </p>
-            <p style="max-width: 900px; margin: 0 auto 30px; font-style: italic;">
-                "This is not theological advocacy but civilisational policy architecture. Structured documentation enhances clarity and reduces misunderstanding around civilisational traditions through research-backed knowledge systems."
-            </p>
-            <div style="text-align: center; margin-top: 40px;">
-                <a href="https://helixoriginator.github.io/Dharma-State-Architecture-A-Sanatan-Framework-for-Civilisational-Governance/" target="_blank" class="btn">Explore the Framework</a>
-            </div>
-        </div>
-    </section>
+<div class="platforms-grid">
 
-    <!-- Section 8: Strategic Value Proposition -->
-    <section class="section value-proposition">
-        <div class="container">
-            <h2 class="section-title">Why This Governance Doctrine Matters</h2>
-            <p style="text-align: center; max-width: 900px; margin: 0 auto 40px;">
-                Our governance architecture represents a significant contribution to global governance theory and practice
-            </p>
-            
-            <ul>
-                <li>Ready-to-deploy institutional frameworks</li>
-                <li>Indigenous governance innovation</li>
-                <li>AI leadership for emerging democracies</li>
-                <li>Citizen-first state architecture</li>
-                <li>Cost-efficient independent research</li>
-                <li>Cultural integrity within constitutional structure</li>
-                <li>Globally adaptable governance systems</li>
-                <li>Ethical AI policy frameworks</li>
-            </ul>
-        </div>
-    </section>
+<div class="platform-card">
+<h3>PMAY Policy Clarification AI</h3>
+<p>AI-powered platform that demystifies Pradhan Mantri Awas Yojana policies.</p>
+<a href="https://helixoriginator.github.io/pmay-policy-clarification-ai/#explainer" target="_blank" class="btn">Explore Platform</a>
+</div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div>
-                    <h3>Kallol Chakrabarti</h3>
-                    <p>Independent Governance Architect & Civilisational Systems Researcher</p>
-                    <p>Lucknow, Uttar Pradesh, India</p>
-                </div>
-                
-                <div>
-                    <h3>Contact</h3>
-                    <p>For collaboration and research inquiries</p>
-                    <p>contact@governancearchitecture.in</p>
-                </div>
-            </div>
-            
-            <div class="copyright">
-                <p>&copy; 2023 Kallol Chakrabarti. All rights reserved.</p>
-                <p>"An independent civilisational governance architecture contributing to Viksit Bharat 2047 and advancing globally adaptable models of ethical statecraft."</p>
-            </div>
-        </div>
-    </footer>
+<div class="platform-card">
+<h3>Concept Architect</h3>
+<p>Advanced conceptualization framework for designing governance systems.</p>
+<a href="https://helixoriginator.github.io/concept-architect/" target="_blank" class="btn">Explore Platform</a>
+</div>
 
-    <script>
-        // Smooth scrolling for navigation
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-        
-        // Animation on scroll
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.1
-        };
-        
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animated');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, observer, observerOptions);
-        
-        document.querySelectorAll('.platform-card, .feature-card, .value-proposition li').forEach(card => {
-            observer.observe(card);
-        });
-    </script>
+<div class="platform-card">
+<h3>Dharma-State Architecture</h3>
+<p>A Sanatan Framework for Civilisational Governance.</p>
+<a href="://helixoriginator.github.io/Dharma-State-Architecture-A-Sanatan-Framework-for-Civilisational-Governance/" target="_blank" class="btn">Explore Framework</a>
+</div>
+
+<div class="platform-card">
+<h3>Bharat Governance Transformation 2014–2025</h3>
+<p>Comprehensive analysis of governance transformation initiatives.</p>
+<a href="https://helixoriginator.github.io/bharat-governance-transformation-2014-2025/" target="_blank" class="btn">Explore Transformation</a>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title">Pioneer Governance Frameworks</h2>
+<p style="max-width:900px;margin:0 auto 25px;text-align:center;">
+The Pioneer Frameworks consolidate independently developed governance doctrines integrating civilisational ethics, AI-state systems, and sovereign institutional design.
+</p>
+<p style="max-width:900px;margin:0 auto 40px;text-align:center;">
+Positioned at the frontier of global governance innovation, these frameworks contribute scalable, research-backed models for ethical statecraft across democracies worldwide.
+</p>
+<div style="text-align:center;">
+<a href="https://helixoriginator.github.io/Pioneer-Frameworks-Kallol-Chakrabarti/" target="_blank" class="btn">
+Explore Pioneer Frameworks
+</a>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="container footer-content">
+
+<div>
+<h3>Kallol Chakrabarti</h3>
+<p>Global Governance Architect | Civilisational Systems Theorist | Institutional Design Strategist</p>
+<p>Lucknow, Uttar Pradesh, India</p>
+</div>
+
+<div>
+<h3>Contact</h3>
+<p>Email: kallolchitralimagicpen@gmail.com</p>
+<p>ORCID iD: 0009 0007 4971 8936</p>
+</div>
+
+</div>
+
+<div class="copyright">
+<p>&copy; 2025 Kallol Chakrabarti. All rights reserved.</p>
+<p>Independent civilisational governance architecture contributing to Viksit Bharat 2047 and advancing globally adaptable models of ethical statecraft.</p>
+</div>
+
+</footer>
+
 </body>
 </html>
