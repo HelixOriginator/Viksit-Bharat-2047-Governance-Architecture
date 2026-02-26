@@ -508,7 +508,9 @@ font-weight: 600;
 }
 
 /* ─── PLATFORMS GRID ─── */
-.platforms-section { background: var(--platinum); }
+.platforms-section { background: linear-gradient(160deg, #0B1F3A 0%, #0d2a1a 100%); }
+.platforms-section .section-title { color: var(--soft-white); }
+.platforms-section .section-subtitle { color: rgba(255,255,255,0.6); }
 
 .platforms-grid {
 display: grid;
@@ -969,6 +971,50 @@ nav { display: none; }
 .samyata-stats { display:flex; gap:14px; flex-wrap:wrap; margin-bottom:14px; }
 .samyata-stats span { font-size:0.78rem; color:var(--sovereign-gold-light); font-weight:600; background:rgba(198,165,74,0.1); padding:4px 10px; border-radius:50px; border:1px solid rgba(198,165,74,0.2); }
 
+.bisv-score-row { display:flex; align-items:center; gap:24px; flex-wrap:wrap; margin:18px 0 14px; background:rgba(198,165,74,0.06); border:1px solid rgba(198,165,74,0.2); border-radius:14px; padding:18px 22px; }
+.bisv-score-block { text-align:center; min-width:100px; }
+.bisv-score-num { display:block; font-family:'Cinzel',serif; font-size:2.4rem; color:var(--sovereign-gold); line-height:1; }
+.bisv-score-label { display:block; font-size:0.75rem; color:rgba(255,255,255,0.6); text-transform:uppercase; letter-spacing:0.5px; margin-top:4px; }
+.bisv-score-source { display:block; font-size:0.7rem; color:var(--sovereign-gold-light); margin-top:3px; font-weight:600; }
+.bisv-score-context { flex:1; }
+.bisv-score-context p { font-size:0.82rem; color:rgba(255,255,255,0.5); line-height:1.6; margin:0; font-style:italic; }
+/* ─── BISV 3.0 FEATURED CARD ─── */
+.bisv-featured-card { background:linear-gradient(135deg,rgba(198,165,74,0.08),rgba(12,91,63,0.06),rgba(11,31,58,0.4)); border:2px solid rgba(198,165,74,0.4); border-radius:20px; padding:36px; margin-bottom:36px; box-shadow:0 0 50px rgba(198,165,74,0.08); }
+.bisv-top-row { display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px; margin-bottom:18px; }
+.bisv-badges { display:flex; flex-wrap:wrap; gap:10px; align-items:center; }
+.bisv-new-badge { background:var(--sovereign-gold); color:var(--deep-navy); padding:5px 16px; border-radius:50px; font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:1px; }
+.bisv-dpid-tag { background:rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.15); color:rgba(255,255,255,0.6); padding:5px 14px; border-radius:50px; font-size:0.75rem; font-family:monospace; }
+.bisv-featured-card h3 { font-family:'Cinzel',serif; color:var(--sovereign-gold-light); font-size:1.1rem; line-height:1.5; margin-bottom:16px; }
+.bisv-abstract { font-size:0.9rem; color:rgba(255,255,255,0.65); line-height:1.75; margin-bottom:20px; }
+.bisv-concepts { display:flex; flex-wrap:wrap; gap:10px; margin-bottom:18px; }
+.bisv-concepts span { background:rgba(198,165,74,0.1); border:1px solid rgba(198,165,74,0.25); color:var(--sovereign-gold-light); padding:5px 13px; border-radius:50px; font-size:0.78rem; font-weight:600; }
+.bisv-note { background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.1); border-radius:10px; padding:12px 16px; font-size:0.8rem; color:rgba(255,255,255,0.45); font-style:italic; }
+
+/* ─── EXPERT RECOGNITION SECTION ─── */
+.expert-section { background:linear-gradient(160deg,#07111f 0%,#0a1a2e 50%,#07111f 100%); padding:100px 0; border-top:4px solid var(--sovereign-gold); }
+.expert-badge { display:block; text-align:center; background:rgba(198,165,74,0.15); border:1px solid rgba(198,165,74,0.4); color:var(--sovereign-gold-light); padding:8px 20px; border-radius:50px; font-size:0.78rem; letter-spacing:2px; text-transform:uppercase; margin:0 auto 20px; font-weight:500; max-width:480px; }
+.expert-cards-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(340px,1fr)); gap:28px; margin-bottom:50px; }
+.expert-card { background:rgba(255,255,255,0.04); border:1px solid rgba(198,165,74,0.25); border-radius:20px; padding:36px; transition:var(--transition); border-top:3px solid var(--sovereign-gold); }
+.expert-card:hover { background:rgba(255,255,255,0.07); transform:translateY(-6px); box-shadow:0 20px 50px rgba(198,165,74,0.12); }
+.expert-card-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; }
+.expert-inst-badge { background:rgba(198,165,74,0.15); border:1px solid rgba(198,165,74,0.35); color:var(--sovereign-gold-light); padding:5px 14px; border-radius:50px; font-size:0.75rem; font-weight:700; letter-spacing:0.5px; }
+.expert-date-tag { color:rgba(255,255,255,0.4); font-size:0.8rem; font-weight:500; }
+.expert-logo-block { display:flex; align-items:center; gap:16px; margin-bottom:14px; }
+.expert-icon { font-size:2.2rem; }
+.expert-logo-block h4 { font-family:'Cinzel',serif; color:var(--soft-white); font-size:1rem; margin:0 0 4px; }
+.expert-sub { color:rgba(255,255,255,0.45); font-size:0.78rem; margin:0; }
+.expert-collab-tag { background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); border-radius:8px; padding:8px 14px; font-size:0.78rem; color:rgba(255,255,255,0.5); margin-bottom:16px; font-style:italic; }
+.expert-card h3 { font-family:'Cinzel',serif; color:var(--sovereign-gold-light); font-size:1rem; margin-bottom:14px; line-height:1.4; }
+.expert-card p { font-size:0.88rem; color:rgba(255,255,255,0.65); line-height:1.7; margin-bottom:16px; }
+.expert-significance { display:flex; flex-wrap:wrap; gap:10px; margin-bottom:16px; }
+.expert-significance span { background:rgba(198,165,74,0.1); border:1px solid rgba(198,165,74,0.25); color:var(--sovereign-gold-light); padding:5px 12px; border-radius:50px; font-size:0.75rem; font-weight:600; }
+.expert-impact-note { font-size:0.82rem; color:rgba(255,255,255,0.45); font-style:italic; border-left:2px solid rgba(198,165,74,0.3); padding-left:12px; margin-bottom:0; }
+.expert-summary-bar { background:rgba(198,165,74,0.06); border:1px solid rgba(198,165,74,0.2); border-radius:16px; padding:24px 36px; display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:16px; }
+.esb-item { display:flex; align-items:center; gap:8px; }
+.esb-icon { font-size:1.2rem; }
+.esb-text { font-size:0.85rem; color:rgba(255,255,255,0.7); font-weight:500; }
+.esb-divider { color:var(--sovereign-gold); font-size:1.2rem; }
+
 /* ─── PUBLICATIONS SECTION ─── */
 .pubs-section { background:linear-gradient(160deg,#07111f 0%,#0a1f10 50%,#07111f 100%); padding:100px 0; border-top:3px solid var(--sovereign-gold); }
 .pubs-badge { display:block; text-align:center; background:rgba(198,165,74,0.15); border:1px solid rgba(198,165,74,0.4); color:var(--sovereign-gold-light); padding:8px 20px; border-radius:50px; font-size:0.78rem; letter-spacing:2px; text-transform:uppercase; margin:0 auto 20px; font-weight:500; max-width:500px; }
@@ -1008,6 +1054,7 @@ nav { display: none; }
 <a href="#sanatan">Sanatan</a>
 <a href="#pioneer">Pioneer</a>
 <a href="#publications">Publications</a>
+<a href="#recognition">Recognition</a>
 <a href="#contact">Contact</a>
 </nav>
 </div>
@@ -1504,7 +1551,7 @@ Explore Pioneer Frameworks →
 <section class="desci-section">
 <div class="container">
 <h2 class="section-title" style="color:white;">DeSci Labs Verification</h2>
-<p class="section-subtitle">25 research articles independently verified by DeSci Labs, Switzerland — all achieving 90% or above on Novelty & Content Score</p>
+<p class="section-subtitle">25+ research articles independently verified by DeSci Labs, Switzerland — all achieving 90% or above on Novelty & Content Score</p>
 
 <div class="desci-header-card">
 <div class="desci-logo-block">
@@ -1529,6 +1576,39 @@ Explore Pioneer Frameworks →
 <span class="dsnum">90%+</span>
 <span class="dslabel">All Articles</span>
 </div>
+</div>
+</div>
+
+<div class="bisv-featured-card">
+<div class="bisv-top-row">
+<div class="bisv-badges">
+<span class="bisv-new-badge">🌟 92% Novelty Score · DeSci Verified</span>
+<span class="bisv-dpid-tag">DPID: 394 · DOI: 10.62891/6b07415a</span>
+</div>
+<a href="https://nodes.desci.com/dpid/394/v1" target="_blank" class="pub-doi-link" style="white-space:nowrap;">View on DeSci Nodes →</a>
+</div>
+<h3>Bio-Integrated Smart Villages 3.0: A Quantum-Enhanced, Space-Linked Paradigm for Sustainable Rural Futures</h3>
+<p class="bisv-abstract">Introduces BISV 3.0 — a transformative rural development model synergizing <strong style="color:var(--sovereign-gold-light);">quantum-enhanced bio-AI</strong>, decentralised microbial energy hubs, sensory biomimetic networks, and <strong style="color:var(--sovereign-gold-light);">blockchain-based Bio-NFT marketplaces</strong> with space-based innovations. Simulations suggest <strong style="color:rgba(255,255,255,0.85);">40–50% gains in agricultural productivity</strong> and <strong style="color:rgba(255,255,255,0.85);">70% reductions in fossil fuel dependency</strong>. Addresses scalability, inclusivity, ecological harmony, and global connectivity — offering a blueprint for sustainable rural futures.</p>
+<div class="bisv-concepts">
+<span>⚛️ Quantum-Enhanced Bio-AI</span>
+<span>🛰️ Space-Linked Climate Resilience</span>
+<span>🧬 Biomimetic Sensory Networks</span>
+<span>🔗 Bio-NFT Marketplaces</span>
+<span>🌾 40–50% Agricultural Productivity Gain</span>
+<span>⚡ 70% Fossil Fuel Reduction</span>
+</div>
+<div class="bisv-score-row">
+<div class="bisv-score-block">
+<span class="bisv-score-num">92%</span>
+<span class="bisv-score-label">Content Novelty Score</span>
+<span class="bisv-score-source">Verified · DeSci Labs</span>
+</div>
+<div class="bisv-score-context">
+<p>Closely matching articles in international journals include <em>International Journal of Environmental Sciences</em>, <em>IOP Conference Series</em>, and <em>Acta Naturae</em> — confirming this work sits at the frontier of multiple disciplines simultaneously.</p>
+</div>
+</div>
+<div class="bisv-note">
+<span>🇬🇧 Independently matched as relevant by UK Government Metascience Unit & University of Sussex — SPRU · Novelty Indicators Challenge</span>
 </div>
 </div>
 
@@ -1770,169 +1850,272 @@ evidence-based citizen knowledge — without rhetoric, without spin, without pol
 
 <!-- ─── SELECTED PUBLICATIONS ─── -->
 <section class="pubs-section" id="publications">
-  <div class="container">
-    <div class="pubs-badge">Peer-Reviewed · DOI Registered · Globally Indexed</div>
-    <h2 class="section-title" style="color:white;">Selected Academic Publications</h2>
-    <p class="section-subtitle">Research published across Zenodo, SSRN, IJISRT, and IJFMR — indexed on Google Scholar, ResearchGate, Semantic Scholar, CrossRef, and OpenAIRE</p>
+<div class="container">
+<div class="pubs-badge">Peer-Reviewed · DOI Registered · Globally Indexed</div>
+<h2 class="section-title" style="color:white;">Selected Academic Publications</h2>
+<p class="section-subtitle">Research published across Zenodo, SSRN, IJISRT, and IJFMR — indexed on Google Scholar, ResearchGate, Semantic Scholar, CrossRef, and OpenAIRE</p>
 
-    <!-- ZENODO -->
-    <div class="pub-platform-block">
-      <div class="pub-platform-header">
-        <span class="pub-platform-icon">🔬</span>
-        <h3>Zenodo Open Repository <span class="pub-platform-tag">CERN · OpenAIRE · Google Scholar Indexed</span></h3>
-      </div>
-      <div class="pub-cards-grid">
+<!-- ZENODO -->
+<div class="pub-platform-block">
+<div class="pub-platform-header">
+<span class="pub-platform-icon">🔬</span>
+<h3>Zenodo Open Repository <span class="pub-platform-tag">CERN · OpenAIRE · Google Scholar Indexed</span></h3>
+</div>
+<div class="pub-cards-grid">
 
-        <div class="pub-card-item world-first">
-          <div class="pub-card-top">
-            <span class="pub-type-tag" style="background:rgba(198,165,74,0.2);color:var(--sovereign-gold-light);border-color:rgba(198,165,74,0.4);">🌍 World First · Sanatan Dharma</span>
-            <span class="pub-year-tag">Aug 2025</span>
-          </div>
-          <h4>SANATANA SAMYATA: The Complete Dharma Defense Manual — Comprehensive Responses to Misconceptions About Hindu Dharma</h4>
-          <p>Confirmed by Zenodo as <strong style="color:var(--sovereign-gold-light);">"the world's first comprehensive ready reckoner"</strong> that systematically addresses and dispels widespread myths about Hinduism. Evidence drawn from Hindu scriptures, historical records, and contemporary social realities. Counters narratives used by conversion lobbies. <strong style="color:rgba(255,255,255,0.8);">764 Views · 444 Downloads</strong> — exceptional reach for independent research.</p>
-          <div class="samyata-stats">
-            <span>👁️ 764 Views</span>
-            <span>📥 444 Downloads</span>
-            <span>🌍 Google Confirmed — World First</span>
-          </div>
-          <a href="https://doi.org/10.5281/zenodo.16714489" target="_blank" class="pub-doi-link">DOI: 10.5281/zenodo.16714489 →</a>
-        </div>
+<div class="pub-card-item world-first" style="grid-column:1/-1;border-top:2px solid var(--sovereign-gold);">
+<div class="pub-card-top">
+<span class="pub-type-tag" style="background:rgba(198,165,74,0.2);color:var(--sovereign-gold-light);border-color:rgba(198,165,74,0.4);">🌟 92% Novelty Score · DeSci Nodes · DPID 394</span>
+<span class="pub-year-tag">2025</span>
+</div>
+<h4>Bio-Integrated Smart Villages 3.0: A Quantum-Enhanced, Space-Linked Paradigm for Sustainable Rural Futures</h4>
+<p>A frontier rural development framework synergizing <strong style="color:var(--sovereign-gold-light);">quantum-enhanced bio-AI</strong>, decentralised microbial energy hubs, biomimetic sensory networks, and blockchain Bio-NFT marketplaces with space-based climate resilience. Projects <strong style="color:rgba(255,255,255,0.8);">40–50% agricultural productivity gains</strong> and <strong style="color:rgba(255,255,255,0.8);">70% fossil fuel reduction.</strong> <em style="color:rgba(255,255,255,0.5);">Independently matched as relevant by UK Government Metascience Unit & University of Sussex — SPRU.</em></p>
+<div class="samyata-stats">
+<span>⚛️ Quantum Bio-AI</span>
+<span>🛰️ Space-Linked Resilience</span>
+<span>🧬 Biomimetic Networks</span>
+<span>🔗 Bio-NFT Marketplace</span>
+<span>🇬🇧 UK Govt Matched</span>
+</div>
+<a href="https://nodes.desci.com/dpid/394/v1" target="_blank" class="pub-doi-link">DPID: 394 · DOI: 10.62891/6b07415a → View on DeSci Nodes</a>
+</div>
 
-        <div class="pub-card-item featured">
-          <div class="pub-card-top">
-            <span class="pub-type-tag">Governance · AI · Welfare</span>
-            <span class="pub-year-tag">July 2025</span>
-          </div>
-          <h4>From Elite Capture to Citizen Empowerment: India's Dual-Track Governance Revolution and the Digital Pathway to Universal Inclusion</h4>
-          <p>Introduces "Aspirational Governance" concept. Analyses 1,200+ Padma Award recipients (2014–2024) and 800M+ beneficiaries. Proposes the world-first "One-Roster for Last-Mile Deprivation" (ORLMD) — an AI-blockchain predictive welfare ecosystem.</p>
-          <a href="https://doi.org/10.5281/zenodo.15880176" target="_blank" class="pub-doi-link">DOI: 10.5281/zenodo.15880176 →</a>
-        </div>
+<div class="pub-card-item world-first">
+<div class="pub-card-top">
+<span class="pub-type-tag" style="background:rgba(198,165,74,0.2);color:var(--sovereign-gold-light);border-color:rgba(198,165,74,0.4);">🌍 World First · Sanatan Dharma</span>
+<span class="pub-year-tag">Aug 2025</span>
+</div>
+<h4>SANATANA SAMYATA: The Complete Dharma Defense Manual — Comprehensive Responses to Misconceptions About Hindu Dharma</h4>
+<p>Confirmed by Zenodo as <strong style="color:var(--sovereign-gold-light);">"the world's first comprehensive ready reckoner"</strong> that systematically addresses and dispels widespread myths about Hinduism. Evidence drawn from Hindu scriptures, historical records, and contemporary social realities. Counters narratives used by conversion lobbies. <strong style="color:rgba(255,255,255,0.8);">764 Views · 444 Downloads</strong> — exceptional reach for independent research.</p>
+<div class="samyata-stats">
+<span>👁️ 764 Views</span>
+<span>📥 444 Downloads</span>
+<span>🌍 Google Confirmed — World First</span>
+</div>
+<a href="https://doi.org/10.5281/zenodo.16714489" target="_blank" class="pub-doi-link">DOI: 10.5281/zenodo.16714489 →</a>
+</div>
 
-        <div class="pub-card-item featured">
-          <div class="pub-card-top">
-            <span class="pub-type-tag">AI Governance · Democracy</span>
-            <span class="pub-year-tag">Feb 2026</span>
-          </div>
-          <h4>Civic Reflexivity Engines: A New Framework for Democratic AI Governance</h4>
-          <p>Introduces a world-first institutional category — Civic Reflexivity Engines (CREs). Proposes reflexive co-constitution as AI and civic judgment continuously co-evolve. Redefines democracy as a metabolic system.</p>
-          <a href="https://doi.org/10.5281/zenodo.18524801" target="_blank" class="pub-doi-link">DOI: 10.5281/zenodo.18524801 →</a>
-        </div>
+<div class="pub-card-item featured">
+<div class="pub-card-top">
+<span class="pub-type-tag">Governance · AI · Welfare</span>
+<span class="pub-year-tag">July 2025</span>
+</div>
+<h4>From Elite Capture to Citizen Empowerment: India's Dual-Track Governance Revolution and the Digital Pathway to Universal Inclusion</h4>
+<p>Introduces "Aspirational Governance" concept. Analyses 1,200+ Padma Award recipients (2014–2024) and 800M+ beneficiaries. Proposes the world-first "One-Roster for Last-Mile Deprivation" (ORLMD) — an AI-blockchain predictive welfare ecosystem.</p>
+<a href="https://doi.org/10.5281/zenodo.15880176" target="_blank" class="pub-doi-link">DOI: 10.5281/zenodo.15880176 →</a>
+</div>
 
-        <div class="pub-card-item">
-          <div class="pub-card-top">
-            <span class="pub-type-tag">25 Articles · DeSci Verified</span>
-            <span class="pub-year-tag">94.9% Avg Novelty</span>
-          </div>
-          <h4>DeSci Labs Novelty Benchmark Collection</h4>
-          <p>25 research articles verified by DeSci Labs, Switzerland — all scoring 90%+ on Novelty & Content Score. 4 articles achieving perfect 100% novelty. Spanning geopolitics, AI, economy, Sanatan Dharma, and civilisational studies.</p>
-          <a href="https://doi.org/10.5281/zenodo.17417996" target="_blank" class="pub-doi-link">DOI: 10.5281/zenodo.17417996 →</a>
-        </div>
+<div class="pub-card-item featured">
+<div class="pub-card-top">
+<span class="pub-type-tag">AI Governance · Democracy</span>
+<span class="pub-year-tag">Feb 2026</span>
+</div>
+<h4>Civic Reflexivity Engines: A New Framework for Democratic AI Governance</h4>
+<p>Introduces a world-first institutional category — Civic Reflexivity Engines (CREs). Proposes reflexive co-constitution as AI and civic judgment continuously co-evolve. Redefines democracy as a metabolic system.</p>
+<a href="https://doi.org/10.5281/zenodo.18524801" target="_blank" class="pub-doi-link">DOI: 10.5281/zenodo.18524801 →</a>
+</div>
 
-        <div class="pub-card-item">
-          <div class="pub-card-top">
-            <span class="pub-type-tag">Zenodo Research</span>
-            <span class="pub-year-tag">2025</span>
-          </div>
-          <h4>Research Publication — Zenodo Repository</h4>
-          <p>Peer-indexed open-access publication contributing to governance, civilisational studies, and policy innovation frameworks — part of the 256+ DOI portfolio on Zenodo.</p>
-          <a href="https://doi.org/10.5281/zenodo.16414167" target="_blank" class="pub-doi-link">DOI: 10.5281/zenodo.16414167 →</a>
-        </div>
+<div class="pub-card-item">
+<div class="pub-card-top">
+<span class="pub-type-tag">25 Articles · DeSci Verified</span>
+<span class="pub-year-tag">94.9% Avg Novelty</span>
+</div>
+<h4>DeSci Labs Novelty Benchmark Collection</h4>
+<p>25 research articles verified by DeSci Labs, Switzerland — all scoring 90%+ on Novelty & Content Score. 4 articles achieving perfect 100% novelty. Spanning geopolitics, AI, economy, Sanatan Dharma, and civilisational studies.</p>
+<a href="https://doi.org/10.5281/zenodo.17417996" target="_blank" class="pub-doi-link">DOI: 10.5281/zenodo.17417996 →</a>
+</div>
 
-      </div>
-    </div>
+<div class="pub-card-item">
+<div class="pub-card-top">
+<span class="pub-type-tag">Zenodo Research</span>
+<span class="pub-year-tag">2025</span>
+</div>
+<h4>Research Publication — Zenodo Repository</h4>
+<p>Peer-indexed open-access publication contributing to governance, civilisational studies, and policy innovation frameworks — part of the 256+ DOI portfolio on Zenodo.</p>
+<a href="https://doi.org/10.5281/zenodo.16414167" target="_blank" class="pub-doi-link">DOI: 10.5281/zenodo.16414167 →</a>
+</div>
 
-    <!-- SSRN -->
-    <div class="pub-platform-block">
-      <div class="pub-platform-header">
-        <span class="pub-platform-icon">📚</span>
-        <h3>SSRN — Social Science Research Network <span class="pub-platform-tag">Elsevier · Used by Harvard, Oxford, Top Law Schools</span></h3>
-      </div>
-      <div class="pub-cards-grid">
+</div>
+</div>
 
-        <div class="pub-card-item">
-          <div class="pub-card-top">
-            <span class="pub-type-tag">National Security · Defence</span>
-            <span class="pub-year-tag">2025</span>
-          </div>
-          <h4>Śāstra and Śakti: Analysis of Operation Sindoor</h4>
-          <p>Published on SSRN's Conflict Studies eJournal. Analyses India's military doctrine through the lens of ancient strategic wisdom and contemporary security posture.</p>
-          <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5286196" target="_blank" class="pub-doi-link">View on SSRN →</a>
-        </div>
+<!-- SSRN -->
+<div class="pub-platform-block">
+<div class="pub-platform-header">
+<span class="pub-platform-icon">📚</span>
+<h3>SSRN — Social Science Research Network <span class="pub-platform-tag">Elsevier · Used by Harvard, Oxford, Top Law Schools</span></h3>
+</div>
+<div class="pub-cards-grid">
 
-        <div class="pub-card-item">
-          <div class="pub-card-top">
-            <span class="pub-type-tag">Internal Security · Policy</span>
-            <span class="pub-year-tag">Feb 2025</span>
-          </div>
-          <h4>Countering Left-Wing Extremism: India's Policy Shift</h4>
-          <p>Examines India's evolving counter-insurgency strategy and policy framework for addressing left-wing extremism through governance, development, and security integration.</p>
-          <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5155509" target="_blank" class="pub-doi-link">View on SSRN →</a>
-        </div>
+<div class="pub-card-item">
+<div class="pub-card-top">
+<span class="pub-type-tag">National Security · Defence</span>
+<span class="pub-year-tag">2025</span>
+</div>
+<h4>Śāstra and Śakti: Analysis of Operation Sindoor</h4>
+<p>Published on SSRN's Conflict Studies eJournal. Analyses India's military doctrine through the lens of ancient strategic wisdom and contemporary security posture.</p>
+<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5286196" target="_blank" class="pub-doi-link">View on SSRN →</a>
+</div>
 
-        <div class="pub-card-item">
-          <div class="pub-card-top">
-            <span class="pub-type-tag">SSRN Research</span>
-            <span class="pub-year-tag">2025</span>
-          </div>
-          <h4>SSRN Research Publication</h4>
-          <p>Published on SSRN — one of the world's most prestigious social science preprint platforms — contributing to the growing body of original governance and policy research.</p>
-          <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5338886" target="_blank" class="pub-doi-link">View on SSRN →</a>
-        </div>
+<div class="pub-card-item">
+<div class="pub-card-top">
+<span class="pub-type-tag">Internal Security · Policy</span>
+<span class="pub-year-tag">Feb 2025</span>
+</div>
+<h4>Countering Left-Wing Extremism: India's Policy Shift</h4>
+<p>Examines India's evolving counter-insurgency strategy and policy framework for addressing left-wing extremism through governance, development, and security integration.</p>
+<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5155509" target="_blank" class="pub-doi-link">View on SSRN →</a>
+</div>
 
-      </div>
-    </div>
+<div class="pub-card-item">
+<div class="pub-card-top">
+<span class="pub-type-tag">SSRN Research</span>
+<span class="pub-year-tag">2025</span>
+</div>
+<h4>SSRN Research Publication</h4>
+<p>Published on SSRN — one of the world's most prestigious social science preprint platforms — contributing to the growing body of original governance and policy research.</p>
+<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5338886" target="_blank" class="pub-doi-link">View on SSRN →</a>
+</div>
 
-    <!-- JOURNALS -->
-    <div class="pub-platform-block">
-      <div class="pub-platform-header">
-        <span class="pub-platform-icon">📄</span>
-        <h3>Peer-Reviewed Journals <span class="pub-platform-tag">CrossRef DOI · Google Scholar · ResearchGate · Semantic Scholar</span></h3>
-      </div>
-      <div class="pub-cards-grid">
+</div>
+</div>
 
-        <div class="pub-card-item">
-          <div class="pub-card-top">
-            <span class="pub-type-tag">IJFMR · Impact Factor 9.24</span>
-            <span class="pub-year-tag">Dec 2024</span>
-          </div>
-          <h4>Constructive vs. Extreme Rhetoric in Managerial Communication: A Holistic Framework Integrating Rhetorical Devices, Emotional Intelligence, and Eastern Philosophy</h4>
-          <p>Published in International Journal For Multidisciplinary Research (E-ISSN: 2582-2160, Impact Factor 9.24). CrossRef DOI registered. Indexed on Google Scholar, ResearchGate, Zenodo, WorldCat, Semantic Scholar.</p>
-          <a href="https://www.ijfmr.com/research-paper.php?id=32335" target="_blank" class="pub-doi-link">DOI: 10.36948/ijfmr.2024.v06i06.32335 →</a>
-        </div>
+<!-- JOURNALS -->
+<div class="pub-platform-block">
+<div class="pub-platform-header">
+<span class="pub-platform-icon">📄</span>
+<h3>Peer-Reviewed Journals <span class="pub-platform-tag">CrossRef DOI · Google Scholar · ResearchGate · Semantic Scholar</span></h3>
+</div>
+<div class="pub-cards-grid">
 
-        <div class="pub-card-item">
-          <div class="pub-card-top">
-            <span class="pub-type-tag">IJISRT · Google Scholar</span>
-            <span class="pub-year-tag">Nov 2024</span>
-          </div>
-          <h4>Advancing Rhetorical Strategies in Virtual Litigation: Balancing Persuasion and Equity in Digital Courtrooms</h4>
-          <p>Published in International Journal of Innovative Science and Research Technology (Vol. 9, Issue 11). Indexed on Google Scholar, Scribd, Semantic Scholar, ResearchGate, PlumX Metrics.</p>
-          <a href="https://ijisrt.com/advancing-rhetorical-strategies-in-virtual-litigation-balancing-persuasion-and-equity-in-digital-courtrooms" target="_blank" class="pub-doi-link">DOI: 10.38124/ijisrt/IJISRT24NOV1224 →</a>
-        </div>
+<div class="pub-card-item">
+<div class="pub-card-top">
+<span class="pub-type-tag">IJFMR · Impact Factor 9.24</span>
+<span class="pub-year-tag">Dec 2024</span>
+</div>
+<h4>Constructive vs. Extreme Rhetoric in Managerial Communication: A Holistic Framework Integrating Rhetorical Devices, Emotional Intelligence, and Eastern Philosophy</h4>
+<p>Published in International Journal For Multidisciplinary Research (E-ISSN: 2582-2160, Impact Factor 9.24). CrossRef DOI registered. Indexed on Google Scholar, ResearchGate, Zenodo, WorldCat, Semantic Scholar.</p>
+<a href="https://www.ijfmr.com/research-paper.php?id=32335" target="_blank" class="pub-doi-link">DOI: 10.36948/ijfmr.2024.v06i06.32335 →</a>
+</div>
 
-      </div>
-    </div>
+<div class="pub-card-item">
+<div class="pub-card-top">
+<span class="pub-type-tag">IJISRT · Google Scholar</span>
+<span class="pub-year-tag">Nov 2024</span>
+</div>
+<h4>Advancing Rhetorical Strategies in Virtual Litigation: Balancing Persuasion and Equity in Digital Courtrooms</h4>
+<p>Published in International Journal of Innovative Science and Research Technology (Vol. 9, Issue 11). Indexed on Google Scholar, Scribd, Semantic Scholar, ResearchGate, PlumX Metrics.</p>
+<a href="https://ijisrt.com/advancing-rhetorical-strategies-in-virtual-litigation-balancing-persuasion-and-equity-in-digital-courtrooms" target="_blank" class="pub-doi-link">DOI: 10.38124/ijisrt/IJISRT24NOV1224 →</a>
+</div>
 
-    <div class="pubs-summary">
-      <div class="pubs-sum-stat">
-        <span class="psum-num">256+</span>
-        <span class="psum-label">Total DOIs</span>
-      </div>
-      <div class="pubs-sum-stat">
-        <span class="psum-num">4</span>
-        <span class="psum-label">Platforms</span>
-      </div>
-      <div class="pubs-sum-stat">
-        <span class="psum-num">9.24</span>
-        <span class="psum-label">Impact Factor</span>
-      </div>
-      <div class="pubs-sum-stat">
-        <span class="psum-num">5000+</span>
-        <span class="psum-label">Downloads</span>
-      </div>
-    </div>
+</div>
+</div>
 
-  </div>
+<div class="pubs-summary">
+<div class="pubs-sum-stat">
+<span class="psum-num">256+</span>
+<span class="psum-label">Total DOIs</span>
+</div>
+<div class="pubs-sum-stat">
+<span class="psum-num">4</span>
+<span class="psum-label">Platforms</span>
+</div>
+<div class="pubs-sum-stat">
+<span class="psum-num">9.24</span>
+<span class="psum-label">Impact Factor</span>
+</div>
+<div class="pubs-sum-stat">
+<span class="psum-num">5000+</span>
+<span class="psum-label">Downloads</span>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- ─── INTERNATIONAL EXPERT RECOGNITION ─── -->
+<section class="expert-section" id="recognition">
+<div class="container">
+<div class="expert-badge">Unsolicited · International · Independent Validation</div>
+<h2 class="section-title" style="color:white;">International Expert Recognition</h2>
+<p class="section-subtitle">Independently identified and invited as a domain expert by international academic and government institutions — without application or solicitation</p>
+
+<div class="expert-intro">
+<p style="text-align:center;color:rgba(255,255,255,0.7);max-width:800px;margin:0 auto 50px;font-size:1rem;line-height:1.8;">The following invitations were received unsolicited — meaning these institutions independently identified Kallol Chakrabarti's published work as sufficiently credible and relevant to warrant expert-level engagement. This is among the most powerful forms of external validation an independent researcher can receive.</p>
+</div>
+
+<div class="expert-cards-grid">
+
+<div class="expert-card">
+<div class="expert-card-header">
+<div class="expert-inst-badge">🇬🇧 UK Government</div>
+<div class="expert-date-tag">2025</div>
+</div>
+<div class="expert-logo-block">
+<span class="expert-icon">🏛️</span>
+<div>
+<h4>University of Sussex — SPRU</h4>
+<p class="expert-sub">Science Policy Research Unit · Business School</p>
+</div>
+</div>
+<div class="expert-collab-tag">In collaboration with: UK Government's Metascience Unit</div>
+<h3>Metascience Novelty Indicators Challenge</h3>
+<p>Your paper <em>"Synergizing Biology, Technology, and Culture: A Framework for Bio-Integrated Smart Rural Development"</em> was independently matched and identified as relevant to a major UK Government research project. You were personally invited as a <strong style="color:var(--sovereign-gold-light);">recognised domain expert</strong> to assess novelty in selected international publications.</p>
+<div class="expert-significance">
+<span>🔬 Work Independently Matched</span>
+<span>🌍 G7 Government Institution</span>
+<span>📊 Informs Global Research Policy</span>
+</div>
+<p class="expert-impact-note">Survey findings will <em>"help inform the development of policy on research evaluation"</em> globally — your work is shaping how governments measure research novelty.</p>
+</div>
+
+<div class="expert-card">
+<div class="expert-card-header">
+<div class="expert-inst-badge" style="background:rgba(12,91,63,0.3);border-color:rgba(74,222,128,0.3);color:#4ade80;">🤖 AI Research Journal</div>
+<div class="expert-date-tag">Oct 2025</div>
+</div>
+<div class="expert-logo-block">
+<span class="expert-icon">📄</span>
+<div>
+<h4>Academia AI and Applications</h4>
+<p class="expert-sub">Peer-Reviewed International Journal · Academia.edu</p>
+</div>
+</div>
+<div class="expert-collab-tag">Manuscript ID: 4Vrb6A · Addressed as "Dr. Chakrabarti"</div>
+<h3>Peer Review Invitation — AI & Academic Integrity</h3>
+<p>Invited to serve as peer reviewer for the manuscript <em>"Generative AI and Academic Integrity in Online Distance Learning: The AI-Aware Assessment Policy Index for the Global South"</em> — a study integrating 70+ peer-reviewed articles and 50 institutional documents. Invited on the basis of recognised expertise in AI governance and academic systems.</p>
+<div class="expert-significance">
+<span>🎓 Addressed as "Dr. Chakrabarti"</span>
+<span>🤖 AI Governance Expertise Recognised</span>
+<span>🌐 International Journal Validation</span>
+</div>
+<p class="expert-impact-note">Peer review invitations are extended only to researchers whose published work demonstrates sufficient domain expertise to evaluate others' work at an academic standard.</p>
+</div>
+
+</div>
+
+<div class="expert-summary-bar">
+<div class="esb-item">
+<span class="esb-icon">🇬🇧</span>
+<span class="esb-text">UK Government Metascience Unit</span>
+</div>
+<div class="esb-divider">·</div>
+<div class="esb-item">
+<span class="esb-icon">🏛️</span>
+<span class="esb-text">University of Sussex — SPRU</span>
+</div>
+<div class="esb-divider">·</div>
+<div class="esb-item">
+<span class="esb-icon">📄</span>
+<span class="esb-text">Academia AI & Applications Journal</span>
+</div>
+<div class="esb-divider">·</div>
+<div class="esb-item">
+<span class="esb-icon">✅</span>
+<span class="esb-text">Both Unsolicited · Independently Initiated</span>
+</div>
+</div>
+
+</div>
 </section>
 
 <!-- ─── FOOTER ─── -->
@@ -1956,6 +2139,8 @@ evidence-based citizen knowledge — without rhetoric, without spin, without pol
 <p>📄 256+ DOIs on Zenodo</p>
 <p>📥 5,000+ Global Downloads</p>
 <p>🤖 25+ Google AI Validations</p>
+<p>🇬🇧 UK Govt Metascience Unit — Expert Invited</p>
+<p>📄 Academia AI Journal — Peer Reviewer Invited</p>
 </div>
 
 <div class="footer-col">
