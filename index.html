@@ -12,20 +12,20 @@
 
 <style>
 :root {
-  --deep-navy: #0B1F3A;
-  --royal-navy: #132E57;
-  --platinum: #F4F6F8;
-  --charcoal: #1C1F26;
-  --sovereign-gold: #C6A54A;
-  --sovereign-gold-light: #E8C96A;
-  --emerald-accent: #0C5B3F;
-  --emerald-light: #0E7A52;
-  --soft-white: #FFFFFF;
-  --muted-gray: #E6E8EB;
-  --saffron: #FF9933;
-  --india-green: #138808;
-  --ashoka-blue: #000080;
-  --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+--deep-navy: #0B1F3A;
+--royal-navy: #132E57;
+--platinum: #F4F6F8;
+--charcoal: #1C1F26;
+--sovereign-gold: #C6A54A;
+--sovereign-gold-light: #E8C96A;
+--emerald-accent: #0C5B3F;
+--emerald-light: #0E7A52;
+--soft-white: #FFFFFF;
+--muted-gray: #E6E8EB;
+--saffron: #FF9933;
+--india-green: #138808;
+--ashoka-blue: #000080;
+--transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 * { margin:0; padding:0; box-sizing:border-box; }
@@ -33,11 +33,11 @@
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: 'DM Sans', sans-serif;
-  line-height: 1.7;
-  color: var(--charcoal);
-  background-color: var(--platinum);
-  overflow-x: hidden;
+font-family: 'DM Sans', sans-serif;
+line-height: 1.7;
+color: var(--charcoal);
+background-color: var(--platinum);
+overflow-x: hidden;
 }
 
 /* ─── SCROLLBAR ─── */
@@ -46,820 +46,820 @@ body {
 ::-webkit-scrollbar-thumb { background: var(--sovereign-gold); border-radius: 3px; }
 
 .container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 24px;
+width: 100%;
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 24px;
 }
 
 h1,h2,h3,h4 {
-  font-family: 'Cinzel', serif;
-  font-weight: 600;
-  line-height: 1.2;
-  color: var(--deep-navy);
+font-family: 'Cinzel', serif;
+font-weight: 600;
+line-height: 1.2;
+color: var(--deep-navy);
 }
 
 p { margin-bottom: 1rem; font-size: 1.05rem; }
 
 /* ─── BUTTONS ─── */
 .btn {
-  display: inline-block;
-  padding: 13px 28px;
-  background: linear-gradient(135deg, var(--sovereign-gold), var(--emerald-accent));
-  color: var(--soft-white);
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  transition: var(--transition);
-  border: none;
-  cursor: pointer;
-  font-family: 'DM Sans', sans-serif;
+display: inline-block;
+padding: 13px 28px;
+background: linear-gradient(135deg, var(--sovereign-gold), var(--emerald-accent));
+color: var(--soft-white);
+border-radius: 50px;
+text-decoration: none;
+font-weight: 600;
+font-size: 0.85rem;
+text-transform: uppercase;
+letter-spacing: 1.5px;
+transition: var(--transition);
+border: none;
+cursor: pointer;
+font-family: 'DM Sans', sans-serif;
 }
 
 .btn:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(198, 165, 74, 0.35);
+transform: translateY(-4px);
+box-shadow: 0 12px 30px rgba(198, 165, 74, 0.35);
 }
 
 .btn-outline {
-  background: transparent;
-  border: 2px solid var(--sovereign-gold);
-  color: var(--sovereign-gold);
-  padding: 11px 26px;
+background: transparent;
+border: 2px solid var(--sovereign-gold);
+color: var(--sovereign-gold);
+padding: 11px 26px;
 }
 
 .btn-outline:hover {
-  background: var(--sovereign-gold);
-  color: var(--deep-navy);
-  box-shadow: 0 12px 30px rgba(198, 165, 74, 0.25);
+background: var(--sovereign-gold);
+color: var(--deep-navy);
+box-shadow: 0 12px 30px rgba(198, 165, 74, 0.25);
 }
 
 .section { padding: 90px 0; }
 
 .section-title {
-  font-family: 'Cinzel', serif;
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 2.2rem;
-  position: relative;
-  padding-bottom: 25px;
+font-family: 'Cinzel', serif;
+text-align: center;
+margin-bottom: 20px;
+font-size: 2.2rem;
+position: relative;
+padding-bottom: 25px;
 }
 
 .section-title::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 120px;
-  height: 3px;
-  background: linear-gradient(to right, var(--sovereign-gold), var(--emerald-accent));
-  border-radius: 2px;
+content: '';
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translateX(-50%);
+width: 120px;
+height: 3px;
+background: linear-gradient(to right, var(--sovereign-gold), var(--emerald-accent));
+border-radius: 2px;
 }
 
 .section-subtitle {
-  text-align: center;
-  max-width: 780px;
-  margin: 0 auto 60px;
-  font-size: 1.1rem;
-  color: #555;
-  font-style: italic;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.25rem;
+text-align: center;
+max-width: 780px;
+margin: 0 auto 60px;
+font-size: 1.1rem;
+color: #555;
+font-style: italic;
+font-family: 'Cormorant Garamond', serif;
+font-size: 1.25rem;
 }
 
 /* ─── HEADER ─── */
 header {
-  background: var(--deep-navy);
-  color: var(--soft-white);
-  padding: 18px 0;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-  border-bottom: 1px solid rgba(198,165,74,0.2);
+background: var(--deep-navy);
+color: var(--soft-white);
+padding: 18px 0;
+position: fixed;
+width: 100%;
+top: 0;
+z-index: 1000;
+border-bottom: 1px solid rgba(198,165,74,0.2);
 }
 
 .header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
 
 .logo {
-  font-family: 'Cinzel', serif;
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: var(--soft-white);
-  text-decoration: none;
-  letter-spacing: 1px;
+font-family: 'Cinzel', serif;
+font-size: 1.4rem;
+font-weight: 700;
+color: var(--soft-white);
+text-decoration: none;
+letter-spacing: 1px;
 }
 
 .logo span { color: var(--sovereign-gold); }
 
 nav { display: flex; gap: 28px; }
 nav a {
-  color: rgba(255,255,255,0.75);
-  text-decoration: none;
-  font-size: 0.85rem;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  transition: color 0.3s;
-  text-transform: uppercase;
+color: rgba(255,255,255,0.75);
+text-decoration: none;
+font-size: 0.85rem;
+font-weight: 500;
+letter-spacing: 0.5px;
+transition: color 0.3s;
+text-transform: uppercase;
 }
 nav a:hover { color: var(--sovereign-gold); }
 
 /* ─── HERO ─── */
 .hero {
-  background: linear-gradient(160deg, rgba(11,31,58,0.97) 0%, rgba(19,46,87,0.95) 60%, rgba(12,91,63,0.85) 100%),
-    url('https://images.unsplash.com/photo-1620878439129-177b2d18864c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  color: var(--soft-white);
-  padding: 200px 0 140px;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+background: linear-gradient(160deg, rgba(11,31,58,0.97) 0%, rgba(19,46,87,0.95) 60%, rgba(12,91,63,0.85) 100%),
+url('https://images.unsplash.com/photo-1620878439129-177b2d18864c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+color: var(--soft-white);
+padding: 200px 0 140px;
+text-align: center;
+position: relative;
+overflow: hidden;
 }
 
 .hero::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 4px;
-  background: linear-gradient(to right, var(--saffron), var(--soft-white), var(--india-green));
+content: '';
+position: absolute;
+top: 0; left: 0; right: 0;
+height: 4px;
+background: linear-gradient(to right, var(--saffron), var(--soft-white), var(--india-green));
 }
 
 .hero-badge {
-  display: inline-block;
-  background: rgba(198,165,74,0.15);
-  border: 1px solid rgba(198,165,74,0.4);
-  color: var(--sovereign-gold-light);
-  padding: 8px 20px;
-  border-radius: 50px;
-  font-size: 0.8rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 500;
+display: inline-block;
+background: rgba(198,165,74,0.15);
+border: 1px solid rgba(198,165,74,0.4);
+color: var(--sovereign-gold-light);
+padding: 8px 20px;
+border-radius: 50px;
+font-size: 0.8rem;
+letter-spacing: 2px;
+text-transform: uppercase;
+margin-bottom: 30px;
+font-family: 'DM Sans', sans-serif;
+font-weight: 500;
 }
 
 .hero h1 {
-  font-family: 'Cinzel', serif;
-  font-size: 3.2rem;
-  margin-bottom: 24px;
-  color: var(--soft-white);
-  line-height: 1.25;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
+font-family: 'Cinzel', serif;
+font-size: 3.2rem;
+margin-bottom: 24px;
+color: var(--soft-white);
+line-height: 1.25;
+max-width: 900px;
+margin-left: auto;
+margin-right: auto;
 }
 
 .hero h1 span { color: var(--sovereign-gold); }
 
 .hero-subtitle {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.5rem;
-  max-width: 820px;
-  margin: 0 auto 30px;
-  font-weight: 400;
-  opacity: 0.9;
-  line-height: 1.6;
+font-family: 'Cormorant Garamond', serif;
+font-size: 1.5rem;
+max-width: 820px;
+margin: 0 auto 30px;
+font-weight: 400;
+opacity: 0.9;
+line-height: 1.6;
 }
 
 .hero-author {
-  font-size: 1rem;
-  margin-bottom: 50px;
-  opacity: 0.8;
-  font-weight: 300;
-  letter-spacing: 0.5px;
+font-size: 1rem;
+margin-bottom: 50px;
+opacity: 0.8;
+font-weight: 300;
+letter-spacing: 0.5px;
 }
 
 .hero-stats {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  margin-bottom: 50px;
-  flex-wrap: wrap;
+display: flex;
+justify-content: center;
+gap: 50px;
+margin-bottom: 50px;
+flex-wrap: wrap;
 }
 
 .hero-stat {
-  text-align: center;
+text-align: center;
 }
 
 .hero-stat-num {
-  font-family: 'Cinzel', serif;
-  font-size: 2.2rem;
-  color: var(--sovereign-gold);
-  display: block;
-  line-height: 1;
+font-family: 'Cinzel', serif;
+font-size: 2.2rem;
+color: var(--sovereign-gold);
+display: block;
+line-height: 1;
 }
 
 .hero-stat-label {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  opacity: 0.7;
-  margin-top: 6px;
-  display: block;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 1px;
+opacity: 0.7;
+margin-top: 6px;
+display: block;
 }
 
 /* ─── IPA AWARD BANNER ─── */
 .award-banner {
-  background: linear-gradient(135deg, #0B1F3A 0%, #1a3a0a 50%, #0B1F3A 100%);
-  border-top: 3px solid var(--sovereign-gold);
-  border-bottom: 3px solid var(--sovereign-gold);
-  padding: 50px 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+background: linear-gradient(135deg, #0B1F3A 0%, #1a3a0a 50%, #0B1F3A 100%);
+border-top: 3px solid var(--sovereign-gold);
+border-bottom: 3px solid var(--sovereign-gold);
+padding: 50px 0;
+text-align: center;
+position: relative;
+overflow: hidden;
 }
 
 .award-banner::before {
-  content: '★';
-  position: absolute;
-  font-size: 300px;
-  opacity: 0.03;
-  color: var(--sovereign-gold);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
+content: '★';
+position: absolute;
+font-size: 300px;
+opacity: 0.03;
+color: var(--sovereign-gold);
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+pointer-events: none;
 }
 
 .award-inner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 40px;
+flex-wrap: wrap;
 }
 
 .award-icon {
-  width: 90px;
-  height: 90px;
-  background: linear-gradient(135deg, var(--sovereign-gold), var(--sovereign-gold-light));
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.5rem;
-  flex-shrink: 0;
-  box-shadow: 0 0 40px rgba(198,165,74,0.4);
+width: 90px;
+height: 90px;
+background: linear-gradient(135deg, var(--sovereign-gold), var(--sovereign-gold-light));
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 2.5rem;
+flex-shrink: 0;
+box-shadow: 0 0 40px rgba(198,165,74,0.4);
 }
 
 .award-content { text-align: left; max-width: 600px; }
 
 .award-tag {
-  display: inline-block;
-  background: var(--sovereign-gold);
-  color: var(--deep-navy);
-  padding: 5px 16px;
-  border-radius: 50px;
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  margin-bottom: 12px;
+display: inline-block;
+background: var(--sovereign-gold);
+color: var(--deep-navy);
+padding: 5px 16px;
+border-radius: 50px;
+font-size: 0.75rem;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 1.5px;
+margin-bottom: 12px;
 }
 
 .award-content h3 {
-  color: var(--soft-white);
-  font-family: 'Cinzel', serif;
-  font-size: 1.6rem;
-  margin-bottom: 8px;
+color: var(--soft-white);
+font-family: 'Cinzel', serif;
+font-size: 1.6rem;
+margin-bottom: 8px;
 }
 
 .award-content p {
-  color: rgba(255,255,255,0.75);
-  font-size: 1rem;
-  margin: 0;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.15rem;
+color: rgba(255,255,255,0.75);
+font-size: 1rem;
+margin: 0;
+font-family: 'Cormorant Garamond', serif;
+font-size: 1.15rem;
 }
 
 /* ─── AI VALIDATION ─── */
 .ai-section {
-  background: var(--deep-navy);
-  padding: 80px 0;
-  position: relative;
-  overflow: hidden;
+background: var(--deep-navy);
+padding: 80px 0;
+position: relative;
+overflow: hidden;
 }
 
 .ai-section::after {
-  content: '';
-  position: absolute;
-  bottom: 0; left: 0; right: 0;
-  height: 3px;
-  background: linear-gradient(to right, var(--saffron), transparent, var(--india-green));
+content: '';
+position: absolute;
+bottom: 0; left: 0; right: 0;
+height: 3px;
+background: linear-gradient(to right, var(--saffron), transparent, var(--india-green));
 }
 
 .ai-section .section-title { color: var(--soft-white); }
 .ai-section .section-subtitle { color: rgba(255,255,255,0.65); }
 
 .ai-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 24px;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+gap: 24px;
 }
 
 .ai-card {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(198,165,74,0.2);
-  border-radius: 16px;
-  padding: 28px;
-  transition: var(--transition);
+background: rgba(255,255,255,0.05);
+border: 1px solid rgba(198,165,74,0.2);
+border-radius: 16px;
+padding: 28px;
+transition: var(--transition);
 }
 
 .ai-card:hover {
-  background: rgba(255,255,255,0.08);
-  border-color: rgba(198,165,74,0.5);
-  transform: translateY(-6px);
+background: rgba(255,255,255,0.08);
+border-color: rgba(198,165,74,0.5);
+transform: translateY(-6px);
 }
 
 .ai-card-icon {
-  width: 50px;
-  height: 50px;
-  background: linear-gradient(135deg, var(--sovereign-gold), var(--emerald-accent));
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.4rem;
-  margin-bottom: 18px;
+width: 50px;
+height: 50px;
+background: linear-gradient(135deg, var(--sovereign-gold), var(--emerald-accent));
+border-radius: 12px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.4rem;
+margin-bottom: 18px;
 }
 
 .ai-card h4 {
-  color: var(--sovereign-gold-light);
-  font-family: 'Cinzel', serif;
-  font-size: 1rem;
-  margin-bottom: 10px;
+color: var(--sovereign-gold-light);
+font-family: 'Cinzel', serif;
+font-size: 1rem;
+margin-bottom: 10px;
 }
 
 .ai-card p {
-  color: rgba(255,255,255,0.65);
-  font-size: 0.92rem;
-  margin: 0;
-  line-height: 1.6;
+color: rgba(255,255,255,0.65);
+font-size: 0.92rem;
+margin: 0;
+line-height: 1.6;
 }
 
 .ai-evidence-note {
-  text-align: center;
-  margin-top: 40px;
-  padding: 20px 30px;
-  background: rgba(198,165,74,0.1);
-  border: 1px solid rgba(198,165,74,0.3);
-  border-radius: 12px;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+text-align: center;
+margin-top: 40px;
+padding: 20px 30px;
+background: rgba(198,165,74,0.1);
+border: 1px solid rgba(198,165,74,0.3);
+border-radius: 12px;
+max-width: 700px;
+margin-left: auto;
+margin-right: auto;
 }
 
 .ai-evidence-note p {
-  color: var(--sovereign-gold-light);
-  margin: 0;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.2rem;
-  font-style: italic;
+color: var(--sovereign-gold-light);
+margin: 0;
+font-family: 'Cormorant Garamond', serif;
+font-size: 1.2rem;
+font-style: italic;
 }
 
 /* ─── PUBLICATION SECTION ─── */
 .pub-section {
-  background: linear-gradient(160deg, #0B1F3A 0%, #0d2a1a 100%);
-  padding: 80px 0;
-  border-top: 1px solid rgba(198,165,74,0.15);
+background: linear-gradient(160deg, #0B1F3A 0%, #0d2a1a 100%);
+padding: 80px 0;
+border-top: 1px solid rgba(198,165,74,0.15);
 }
 
 .pub-card {
-  background: rgba(255,255,255,0.05);
-  border-radius: 20px;
-  padding: 50px;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: 40px;
-  align-items: center;
-  border-left: 6px solid var(--sovereign-gold);
-  max-width: 900px;
-  margin: 0 auto;
-  border-top: 1px solid rgba(198,165,74,0.2);
-  border-right: 1px solid rgba(198,165,74,0.1);
-  border-bottom: 1px solid rgba(198,165,74,0.1);
+background: rgba(255,255,255,0.05);
+border-radius: 20px;
+padding: 50px;
+box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+display: grid;
+grid-template-columns: 1fr 3fr;
+gap: 40px;
+align-items: center;
+border-left: 6px solid var(--sovereign-gold);
+max-width: 900px;
+margin: 0 auto;
+border-top: 1px solid rgba(198,165,74,0.2);
+border-right: 1px solid rgba(198,165,74,0.1);
+border-bottom: 1px solid rgba(198,165,74,0.1);
 }
 
 .pub-badge-block { text-align: center; }
 
 .pub-badge {
-  width: 80px;
-  height: 80px;
-  background: linear-gradient(135deg, var(--sovereign-gold), var(--emerald-accent));
-  border-radius: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  margin: 0 auto 12px;
-  color: white;
+width: 80px;
+height: 80px;
+background: linear-gradient(135deg, var(--sovereign-gold), var(--emerald-accent));
+border-radius: 16px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 2rem;
+margin: 0 auto 12px;
+color: white;
 }
 
 .pub-badge-block span {
-  display: block;
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: var(--sovereign-gold);
+display: block;
+font-size: 0.75rem;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 1px;
+color: var(--sovereign-gold);
 }
 
 .pub-content h3 {
-  font-family: 'Cinzel', serif;
-  font-size: 1.3rem;
-  margin-bottom: 12px;
-  color: var(--soft-white);
+font-family: 'Cinzel', serif;
+font-size: 1.3rem;
+margin-bottom: 12px;
+color: var(--soft-white);
 }
 
 .pub-content p {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.15rem;
-  color: rgba(255,255,255,0.7);
-  margin-bottom: 16px;
-  line-height: 1.7;
+font-family: 'Cormorant Garamond', serif;
+font-size: 1.15rem;
+color: rgba(255,255,255,0.7);
+margin-bottom: 16px;
+line-height: 1.7;
 }
 
 .pub-meta {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
+display: flex;
+gap: 16px;
+flex-wrap: wrap;
+margin-bottom: 20px;
 }
 
 .pub-tag {
-  background: rgba(12,91,63,0.1);
-  color: var(--emerald-accent);
-  padding: 4px 12px;
-  border-radius: 50px;
-  font-size: 0.8rem;
-  font-weight: 600;
+background: rgba(12,91,63,0.1);
+color: var(--emerald-accent);
+padding: 4px 12px;
+border-radius: 50px;
+font-size: 0.8rem;
+font-weight: 600;
 }
 
 /* ─── PLATFORMS GRID ─── */
 .platforms-section { background: var(--platinum); }
 
 .platforms-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 28px;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 28px;
 }
 
 .platform-card {
-  background: var(--soft-white);
-  border-radius: 16px;
-  padding: 32px;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.07);
-  transition: var(--transition);
-  border-top: 4px solid transparent;
-  position: relative;
-  overflow: hidden;
+background: var(--soft-white);
+border-radius: 16px;
+padding: 32px;
+box-shadow: 0 8px 30px rgba(0,0,0,0.07);
+transition: var(--transition);
+border-top: 4px solid transparent;
+position: relative;
+overflow: hidden;
 }
 
 .platform-card::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 4px;
-  background: linear-gradient(to right, var(--sovereign-gold), var(--emerald-accent));
+content: '';
+position: absolute;
+top: 0; left: 0; right: 0;
+height: 4px;
+background: linear-gradient(to right, var(--sovereign-gold), var(--emerald-accent));
 }
 
 .platform-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+transform: translateY(-10px);
+box-shadow: 0 20px 50px rgba(0,0,0,0.12);
 }
 
 .card-icon {
-  width: 52px;
-  height: 52px;
-  background: linear-gradient(135deg, rgba(198,165,74,0.15), rgba(12,91,63,0.1));
-  border-radius: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
-  margin-bottom: 18px;
+width: 52px;
+height: 52px;
+background: linear-gradient(135deg, rgba(198,165,74,0.15), rgba(12,91,63,0.1));
+border-radius: 14px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.5rem;
+margin-bottom: 18px;
 }
 
 .platform-card h3 {
-  font-family: 'Cinzel', serif;
-  font-size: 1.05rem;
-  margin-bottom: 10px;
-  color: var(--deep-navy);
+font-family: 'Cinzel', serif;
+font-size: 1.05rem;
+margin-bottom: 10px;
+color: var(--deep-navy);
 }
 
 .platform-card p {
-  font-size: 0.92rem;
-  color: #666;
-  margin-bottom: 20px;
-  line-height: 1.6;
+font-size: 0.92rem;
+color: #666;
+margin-bottom: 20px;
+line-height: 1.6;
 }
 
 /* ─── ALL REPOSITORIES ─── */
 .repos-section {
-  background: linear-gradient(180deg, #0e2238 0%, #091929 100%);
-  padding: 90px 0;
+background: linear-gradient(180deg, #0e2238 0%, #091929 100%);
+padding: 90px 0;
 }
 
 .repos-section .section-title { color: var(--soft-white); }
 .repos-section .section-subtitle { color: rgba(255,255,255,0.6); }
 
 .repos-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 22px;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+gap: 22px;
 }
 
 .repo-card {
-  background: rgba(255,255,255,0.04);
-  border-radius: 14px;
-  padding: 26px 28px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-  transition: var(--transition);
-  display: flex;
-  gap: 18px;
-  align-items: flex-start;
-  border-left: 4px solid var(--sovereign-gold);
-  border-top: 1px solid rgba(255,255,255,0.06);
-  border-right: 1px solid rgba(255,255,255,0.03);
-  border-bottom: 1px solid rgba(255,255,255,0.03);
+background: rgba(255,255,255,0.04);
+border-radius: 14px;
+padding: 26px 28px;
+box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+transition: var(--transition);
+display: flex;
+gap: 18px;
+align-items: flex-start;
+border-left: 4px solid var(--sovereign-gold);
+border-top: 1px solid rgba(255,255,255,0.06);
+border-right: 1px solid rgba(255,255,255,0.03);
+border-bottom: 1px solid rgba(255,255,255,0.03);
 }
 
 .repo-card:hover {
-  transform: translateX(6px);
-  box-shadow: 0 8px 30px rgba(198,165,74,0.15);
-  border-left-color: var(--emerald-light);
-  background: rgba(255,255,255,0.07);
+transform: translateX(6px);
+box-shadow: 0 8px 30px rgba(198,165,74,0.15);
+border-left-color: var(--emerald-light);
+background: rgba(255,255,255,0.07);
 }
 
 .repo-num {
-  font-family: 'Cinzel', serif;
-  font-size: 1.8rem;
-  color: rgba(198,165,74,0.2);
-  font-weight: 700;
-  line-height: 1;
-  flex-shrink: 0;
-  min-width: 36px;
+font-family: 'Cinzel', serif;
+font-size: 1.8rem;
+color: rgba(198,165,74,0.2);
+font-weight: 700;
+line-height: 1;
+flex-shrink: 0;
+min-width: 36px;
 }
 
 .repo-info h4 {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: rgba(255,255,255,0.9);
-  margin-bottom: 6px;
+font-family: 'DM Sans', sans-serif;
+font-size: 0.95rem;
+font-weight: 600;
+color: rgba(255,255,255,0.9);
+margin-bottom: 6px;
 }
 
 .repo-info p {
-  font-size: 0.85rem;
-  color: rgba(255,255,255,0.5);
-  margin-bottom: 12px;
-  line-height: 1.5;
+font-size: 0.85rem;
+color: rgba(255,255,255,0.5);
+margin-bottom: 12px;
+line-height: 1.5;
 }
 
 .repo-link {
-  font-size: 0.8rem;
-  color: var(--sovereign-gold);
-  text-decoration: none;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  transition: color 0.3s;
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
+font-size: 0.8rem;
+color: var(--sovereign-gold);
+text-decoration: none;
+font-weight: 600;
+text-transform: uppercase;
+letter-spacing: 0.5px;
+transition: color 0.3s;
+display: inline-flex;
+align-items: center;
+gap: 5px;
 }
 
 .repo-link:hover { color: var(--sovereign-gold-light); }
 
 /* ─── PIONEER SECTION ─── */
 .pioneer-section {
-  background: linear-gradient(160deg, var(--deep-navy) 0%, #0a2d1a 100%);
-  padding: 100px 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+background: linear-gradient(160deg, var(--deep-navy) 0%, #0a2d1a 100%);
+padding: 100px 0;
+text-align: center;
+position: relative;
+overflow: hidden;
 }
 
 .pioneer-section::before {
-  content: 'भारत';
-  position: absolute;
-  font-size: 300px;
-  opacity: 0.03;
-  color: var(--sovereign-gold);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: serif;
-  pointer-events: none;
+content: 'भारत';
+position: absolute;
+font-size: 300px;
+opacity: 0.03;
+color: var(--sovereign-gold);
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-family: serif;
+pointer-events: none;
 }
 
 .pioneer-section .section-title { color: var(--soft-white); }
 .pioneer-section .section-subtitle { color: rgba(255,255,255,0.6); }
 
 .pioneer-features {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 30px;
-  margin-bottom: 50px;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 30px;
+margin-bottom: 50px;
 }
 
 .pioneer-feature {
-  padding: 30px 20px;
-  border: 1px solid rgba(198,165,74,0.2);
-  border-radius: 16px;
-  background: rgba(255,255,255,0.04);
+padding: 30px 20px;
+border: 1px solid rgba(198,165,74,0.2);
+border-radius: 16px;
+background: rgba(255,255,255,0.04);
 }
 
 .pioneer-feature i {
-  font-size: 2rem;
-  color: var(--sovereign-gold);
-  margin-bottom: 14px;
-  display: block;
+font-size: 2rem;
+color: var(--sovereign-gold);
+margin-bottom: 14px;
+display: block;
 }
 
 .pioneer-feature h4 {
-  color: var(--soft-white);
-  font-family: 'Cinzel', serif;
-  font-size: 0.95rem;
-  margin-bottom: 8px;
+color: var(--soft-white);
+font-family: 'Cinzel', serif;
+font-size: 0.95rem;
+margin-bottom: 8px;
 }
 
 .pioneer-feature p {
-  color: rgba(255,255,255,0.55);
-  font-size: 0.85rem;
-  margin: 0;
-  line-height: 1.5;
+color: rgba(255,255,255,0.55);
+font-size: 0.85rem;
+margin: 0;
+line-height: 1.5;
 }
 
 /* ─── SANATAN SECTION ─── */
 .sanatan-section {
-  background: linear-gradient(160deg, #0B1F3A 0%, #1a1a08 60%, #0B1F3A 100%);
-  padding: 90px 0;
-  border-top: 3px solid var(--sovereign-gold);
+background: linear-gradient(160deg, #0B1F3A 0%, #1a1a08 60%, #0B1F3A 100%);
+padding: 90px 0;
+border-top: 3px solid var(--sovereign-gold);
 }
 
 .sanatan-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 30px;
 }
 
 .sanatan-section .section-title { color: var(--soft-white); }
 .sanatan-section .section-subtitle { color: rgba(255,255,255,0.6); }
 
 .sanatan-card {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(198,165,74,0.2);
-  border-radius: 20px;
-  padding: 40px 32px;
-  text-align: center;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
-  transition: var(--transition);
-  border-bottom: 4px solid transparent;
+background: rgba(255,255,255,0.05);
+border: 1px solid rgba(198,165,74,0.2);
+border-radius: 20px;
+padding: 40px 32px;
+text-align: center;
+box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+transition: var(--transition);
+border-bottom: 4px solid transparent;
 }
 
 .sanatan-card:hover {
-  transform: translateY(-8px);
-  border-bottom-color: var(--sovereign-gold);
-  box-shadow: 0 20px 50px rgba(198,165,74,0.15);
-  background: rgba(255,255,255,0.08);
+transform: translateY(-8px);
+border-bottom-color: var(--sovereign-gold);
+box-shadow: 0 20px 50px rgba(198,165,74,0.15);
+background: rgba(255,255,255,0.08);
 }
 
 .sanatan-symbol {
-  font-size: 3rem;
-  margin-bottom: 18px;
-  display: block;
+font-size: 3rem;
+margin-bottom: 18px;
+display: block;
 }
 
 .sanatan-card h3 {
-  font-family: 'Cinzel', serif;
-  font-size: 1.2rem;
-  margin-bottom: 12px;
-  color: var(--sovereign-gold-light);
+font-family: 'Cinzel', serif;
+font-size: 1.2rem;
+margin-bottom: 12px;
+color: var(--sovereign-gold-light);
 }
 
 .sanatan-card p {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.1rem;
-  color: rgba(255,255,255,0.65);
-  line-height: 1.7;
-  margin-bottom: 24px;
+font-family: 'Cormorant Garamond', serif;
+font-size: 1.1rem;
+color: rgba(255,255,255,0.65);
+line-height: 1.7;
+margin-bottom: 24px;
 }
 
 /* ─── NETLIFY SHOWCASE ─── */
 .showcase-section {
-  background: var(--charcoal);
-  padding: 90px 0;
-  text-align: center;
+background: var(--charcoal);
+padding: 90px 0;
+text-align: center;
 }
 
 .showcase-section .section-title { color: var(--soft-white); }
 .showcase-section .section-subtitle { color: rgba(255,255,255,0.6); }
 
 .showcase-frame {
-  background: linear-gradient(135deg, var(--deep-navy), #0a2d1a);
-  border-radius: 20px;
-  padding: 50px;
-  border: 1px solid rgba(198,165,74,0.2);
-  max-width: 750px;
-  margin: 0 auto;
+background: linear-gradient(135deg, var(--deep-navy), #0a2d1a);
+border-radius: 20px;
+padding: 50px;
+border: 1px solid rgba(198,165,74,0.2);
+max-width: 750px;
+margin: 0 auto;
 }
 
 .showcase-tags {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-bottom: 30px;
+display: flex;
+justify-content: center;
+gap: 12px;
+flex-wrap: wrap;
+margin-bottom: 30px;
 }
 
 .showcase-tag {
-  background: rgba(255,255,255,0.08);
-  color: rgba(255,255,255,0.7);
-  padding: 6px 16px;
-  border-radius: 50px;
-  font-size: 0.8rem;
-  letter-spacing: 0.5px;
+background: rgba(255,255,255,0.08);
+color: rgba(255,255,255,0.7);
+padding: 6px 16px;
+border-radius: 50px;
+font-size: 0.8rem;
+letter-spacing: 0.5px;
 }
 
 .showcase-frame h3 {
-  font-family: 'Cinzel', serif;
-  color: var(--soft-white);
-  font-size: 1.8rem;
-  margin-bottom: 14px;
+font-family: 'Cinzel', serif;
+color: var(--soft-white);
+font-size: 1.8rem;
+margin-bottom: 14px;
 }
 
 .showcase-frame p {
-  color: rgba(255,255,255,0.65);
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-  line-height: 1.7;
+color: rgba(255,255,255,0.65);
+font-family: 'Cormorant Garamond', serif;
+font-size: 1.2rem;
+margin-bottom: 30px;
+line-height: 1.7;
 }
 
 /* ─── FOOTER ─── */
 footer {
-  background: #060f1e;
-  color: var(--soft-white);
-  padding: 70px 0 30px;
+background: #060f1e;
+color: var(--soft-white);
+padding: 70px 0 30px;
 }
 
 .footer-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 40px;
-  margin-bottom: 50px;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+gap: 40px;
+margin-bottom: 50px;
 }
 
 .footer-col h4 {
-  font-family: 'Cinzel', serif;
-  color: var(--sovereign-gold);
-  margin-bottom: 18px;
-  font-size: 1rem;
-  letter-spacing: 1px;
+font-family: 'Cinzel', serif;
+color: var(--sovereign-gold);
+margin-bottom: 18px;
+font-size: 1rem;
+letter-spacing: 1px;
 }
 
 .footer-col p, .footer-col a {
-  color: rgba(255,255,255,0.6);
-  font-size: 0.9rem;
-  text-decoration: none;
-  display: block;
-  margin-bottom: 8px;
-  transition: color 0.3s;
-  line-height: 1.6;
+color: rgba(255,255,255,0.6);
+font-size: 0.9rem;
+text-decoration: none;
+display: block;
+margin-bottom: 8px;
+transition: color 0.3s;
+line-height: 1.6;
 }
 
 .footer-col a:hover { color: var(--sovereign-gold); }
 
 .footer-divider {
-  height: 1px;
-  background: rgba(255,255,255,0.08);
-  margin-bottom: 30px;
+height: 1px;
+background: rgba(255,255,255,0.08);
+margin-bottom: 30px;
 }
 
 .copyright {
-  text-align: center;
-  font-size: 0.85rem;
-  color: rgba(255,255,255,0.4);
-  line-height: 1.8;
+text-align: center;
+font-size: 0.85rem;
+color: rgba(255,255,255,0.4);
+line-height: 1.8;
 }
 
 .india-stripe {
-  height: 5px;
-  background: linear-gradient(to right, var(--saffron) 33.33%, var(--soft-white) 33.33%, var(--soft-white) 66.66%, var(--india-green) 66.66%);
-  margin-top: 30px;
+height: 5px;
+background: linear-gradient(to right, var(--saffron) 33.33%, var(--soft-white) 33.33%, var(--soft-white) 66.66%, var(--india-green) 66.66%);
+margin-top: 30px;
 }
 
 /* ─── HELIX LIBRARY SECTION ─── */
@@ -918,6 +918,14 @@ footer {
 .pca-scalability { background:rgba(198,165,74,0.05); border:1px solid rgba(198,165,74,0.2); border-radius:16px; padding:40px; text-align:center; }
 .pca-scalability h3 { font-family:'Cinzel',serif; color:var(--soft-white); margin-bottom:14px; font-size:1.15rem; }
 .pca-scalability p { color:rgba(255,255,255,0.65); margin-bottom:24px; font-size:0.95rem; }
+.pca-live-implementations { background:rgba(255,255,255,0.03); border:1px solid rgba(198,165,74,0.2); border-radius:20px; padding:40px; margin-bottom:30px; }
+.pca-impl-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:24px; margin-top:24px; }
+.pca-impl-card { background:rgba(255,255,255,0.04); border:1px solid rgba(198,165,74,0.25); border-radius:16px; padding:28px; transition:var(--transition); }
+.pca-impl-card:hover { background:rgba(255,255,255,0.08); transform:translateY(-5px); border-color:var(--sovereign-gold); }
+.pca-impl-num { font-family:'Cinzel',serif; font-size:2.5rem; color:rgba(198,165,74,0.2); font-weight:700; line-height:1; margin-bottom:8px; }
+.pca-impl-badge { display:inline-block; background:rgba(12,91,63,0.4); color:#4ade80; padding:4px 12px; border-radius:50px; font-size:0.75rem; font-weight:700; border:1px solid rgba(74,222,128,0.3); margin-bottom:12px; }
+.pca-impl-card h4 { font-family:'Cinzel',serif; color:var(--sovereign-gold-light); font-size:0.95rem; margin-bottom:10px; }
+.pca-impl-card p { color:rgba(255,255,255,0.6); font-size:0.85rem; line-height:1.6; margin-bottom:14px; }
 .scheme-tags { display:flex; flex-wrap:wrap; gap:10px; justify-content:center; }
 .scheme-tag { background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); color:rgba(255,255,255,0.65); padding:7px 16px; border-radius:50px; font-size:0.82rem; transition:var(--transition); }
 .scheme-tag.active { background:rgba(198,165,74,0.2); border-color:var(--sovereign-gold); color:var(--sovereign-gold-light); font-weight:600; }
@@ -925,13 +933,13 @@ footer {
 
 /* ─── ANIMATIONS ─── */
 @keyframes fadeInUp {
-  from { opacity:0; transform:translateY(30px); }
-  to { opacity:1; transform:translateY(0); }
+from { opacity:0; transform:translateY(30px); }
+to { opacity:1; transform:translateY(0); }
 }
 
 @keyframes pulse {
-  0%, 100% { box-shadow: 0 0 20px rgba(198,165,74,0.3); }
-  50% { box-shadow: 0 0 40px rgba(198,165,74,0.6); }
+0%, 100% { box-shadow: 0 0 20px rgba(198,165,74,0.3); }
+50% { box-shadow: 0 0 40px rgba(198,165,74,0.6); }
 }
 
 .hero h1, .hero-subtitle, .hero-author { animation: fadeInUp 0.8s ease forwards; }
@@ -942,15 +950,49 @@ footer {
 
 /* ─── RESPONSIVE ─── */
 @media (max-width: 768px) {
-  .hero h1 { font-size: 2.2rem; }
-  .hero-subtitle { font-size: 1.2rem; }
-  .hero-stats { gap: 30px; }
-  nav { display: none; }
-  .pub-card { grid-template-columns: 1fr; text-align: center; }
-  .pub-badge-block { margin-bottom: 10px; }
-  .award-inner { flex-direction: column; text-align: center; }
-  .award-content { text-align: center; }
+.hero h1 { font-size: 2.2rem; }
+.hero-subtitle { font-size: 1.2rem; }
+.hero-stats { gap: 30px; }
+nav { display: none; }
+.pub-card { grid-template-columns: 1fr; text-align: center; }
+.pub-badge-block { margin-bottom: 10px; }
+.award-inner { flex-direction: column; text-align: center; }
+.award-content { text-align: center; }
 }
+.samyata-card { border:2px solid rgba(198,165,74,0.5) !important; background:linear-gradient(135deg,rgba(198,165,74,0.08),rgba(12,91,63,0.06)) !important; box-shadow:0 0 40px rgba(198,165,74,0.1); grid-column: 1 / -1; }
+.samyata-card:hover { box-shadow:0 15px 50px rgba(198,165,74,0.2) !important; }
+.samyata-world-badge { display:inline-block; background:var(--sovereign-gold); color:var(--deep-navy); padding:5px 16px; border-radius:50px; font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:16px; }
+.samyata-metrics { display:flex; gap:12px; flex-wrap:wrap; margin:16px 0; }
+.samyata-metrics span { font-size:0.78rem; color:var(--sovereign-gold-light); font-weight:600; background:rgba(198,165,74,0.12); padding:5px 12px; border-radius:50px; border:1px solid rgba(198,165,74,0.25); }
+.pub-card-item.world-first { border-left:3px solid var(--sovereign-gold); background:linear-gradient(135deg,rgba(198,165,74,0.08),rgba(12,91,63,0.06)); border-top:1px solid rgba(198,165,74,0.3); box-shadow:0 0 30px rgba(198,165,74,0.08); }
+.pub-card-item.world-first:hover { box-shadow:0 10px 40px rgba(198,165,74,0.15); transform:translateY(-6px); }
+.samyata-stats { display:flex; gap:14px; flex-wrap:wrap; margin-bottom:14px; }
+.samyata-stats span { font-size:0.78rem; color:var(--sovereign-gold-light); font-weight:600; background:rgba(198,165,74,0.1); padding:4px 10px; border-radius:50px; border:1px solid rgba(198,165,74,0.2); }
+
+/* ─── PUBLICATIONS SECTION ─── */
+.pubs-section { background:linear-gradient(160deg,#07111f 0%,#0a1f10 50%,#07111f 100%); padding:100px 0; border-top:3px solid var(--sovereign-gold); }
+.pubs-badge { display:block; text-align:center; background:rgba(198,165,74,0.15); border:1px solid rgba(198,165,74,0.4); color:var(--sovereign-gold-light); padding:8px 20px; border-radius:50px; font-size:0.78rem; letter-spacing:2px; text-transform:uppercase; margin:0 auto 20px; font-weight:500; max-width:500px; }
+.pub-platform-block { margin-bottom:50px; }
+.pub-platform-header { display:flex; align-items:center; gap:14px; margin-bottom:24px; padding-bottom:14px; border-bottom:1px solid rgba(198,165,74,0.2); }
+.pub-platform-icon { font-size:1.8rem; }
+.pub-platform-header h3 { font-family:'Cinzel',serif; color:var(--soft-white); font-size:1.1rem; margin:0; }
+.pub-platform-tag { font-family:'DM Sans',sans-serif; font-size:0.75rem; color:rgba(255,255,255,0.45); font-weight:400; margin-left:10px; letter-spacing:0.5px; }
+.pub-cards-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:18px; }
+.pub-card-item { background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.07); border-radius:14px; padding:24px; transition:var(--transition); border-left:3px solid rgba(198,165,74,0.3); }
+.pub-card-item.featured { border-left:3px solid var(--sovereign-gold); background:rgba(198,165,74,0.04); }
+.pub-card-item:hover { background:rgba(255,255,255,0.06); transform:translateY(-4px); border-left-color:var(--sovereign-gold); }
+.pub-card-top { display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; flex-wrap:wrap; gap:8px; }
+.pub-type-tag { background:rgba(12,91,63,0.3); color:#6ee7b7; padding:3px 10px; border-radius:50px; font-size:0.72rem; font-weight:600; border:1px solid rgba(110,231,183,0.2); }
+.pub-year-tag { color:var(--sovereign-gold); font-size:0.75rem; font-weight:600; }
+.pub-card-item h4 { font-family:'DM Sans',sans-serif; font-size:0.92rem; font-weight:600; color:rgba(255,255,255,0.88); line-height:1.5; margin-bottom:10px; }
+.pub-card-item p { font-size:0.83rem; color:rgba(255,255,255,0.52); line-height:1.6; margin-bottom:14px; }
+.pub-doi-link { font-size:0.78rem; color:var(--sovereign-gold); text-decoration:none; font-weight:600; letter-spacing:0.3px; transition:color 0.3s; display:inline-flex; align-items:center; gap:4px; }
+.pub-doi-link:hover { color:var(--sovereign-gold-light); }
+.pubs-summary { display:flex; justify-content:center; gap:50px; flex-wrap:wrap; margin-top:50px; padding:40px; background:rgba(198,165,74,0.05); border:1px solid rgba(198,165,74,0.2); border-radius:20px; }
+.pubs-sum-stat { text-align:center; }
+.psum-num { display:block; font-family:'Cinzel',serif; font-size:2.2rem; color:var(--sovereign-gold); line-height:1; }
+.psum-label { display:block; font-size:0.8rem; color:rgba(255,255,255,0.5); margin-top:5px; text-transform:uppercase; letter-spacing:0.5px; }
+
 </style>
 </head>
 
@@ -958,786 +1000,990 @@ footer {
 
 <!-- ─── HEADER ─── -->
 <header>
-  <div class="container header-container">
-    <a href="#" class="logo">Governance<span>Architecture</span></a>
-    <nav>
-      <a href="#platforms">Platforms</a>
-      <a href="#repositories">Repositories</a>
-      <a href="#sanatan">Sanatan</a>
-      <a href="#pioneer">Pioneer</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
+<div class="container header-container">
+<a href="#" class="logo">Governance<span>Architecture</span></a>
+<nav>
+<a href="#platforms">Platforms</a>
+<a href="#repositories">Repositories</a>
+<a href="#sanatan">Sanatan</a>
+<a href="#pioneer">Pioneer</a>
+<a href="#publications">Publications</a>
+<a href="#contact">Contact</a>
+</nav>
+</div>
 </header>
 
 <!-- ─── HERO ─── -->
 <section class="hero">
-  <div class="container">
-    <div class="hero-badge">Viksit Bharat 2047 · Civilisational Governance</div>
-    <h1>A Unified Governance Architecture<br>for <span>Viksit Bharat 2047</span></h1>
-    <p class="hero-subtitle">
-      An integrated doctrine combining AI-enabled governance, citizen data sovereignty,
-      civilisational ethics, institutional stability, and national development systems.
-    </p>
-    <p class="hero-author">
-      Kallol Chakrabarti &nbsp;|&nbsp; Global Governance Architect &nbsp;|&nbsp;
-      Civilisational Systems Theorist &nbsp;|&nbsp; AI-State Framework Pioneer
-    </p>
-    <div class="hero-stats">
-      <div class="hero-stat">
-        <span class="hero-stat-num">151</span>
-        <span class="hero-stat-label">GitHub Repositories</span>
-      </div>
-      <div class="hero-stat">
-        <span class="hero-stat-num">256+</span>
-        <span class="hero-stat-label">DOIs on Zenodo</span>
-      </div>
-      <div class="hero-stat">
-        <span class="hero-stat-num">94.9%</span>
-        <span class="hero-stat-label">Avg. Novelty Score</span>
-      </div>
-      <div class="hero-stat">
-        <span class="hero-stat-num">5000+</span>
-        <span class="hero-stat-label">Global Downloads</span>
-      </div>
-      <div class="hero-stat">
-        <span class="hero-stat-num">IPA</span>
-        <span class="hero-stat-label">Award Shortlisted</span>
-      </div>
-    </div>
-    <a href="#platforms" class="btn">Explore the Complete Governance Architecture</a>
-  </div>
+<div class="container">
+<div class="hero-badge">Viksit Bharat 2047 · Civilisational Governance</div>
+<h1>A Unified Governance Architecture<br>for <span>Viksit Bharat 2047</span></h1>
+<p class="hero-subtitle">
+An integrated doctrine combining AI-enabled governance, citizen data sovereignty,
+civilisational ethics, institutional stability, and national development systems.
+</p>
+<p class="hero-author">
+Kallol Chakrabarti &nbsp;|&nbsp; Global Governance Architect &nbsp;|&nbsp;
+Civilisational Systems Theorist &nbsp;|&nbsp; AI-State Framework Pioneer
+</p>
+<div class="hero-stats">
+<div class="hero-stat">
+<span class="hero-stat-num">150+</span>
+<span class="hero-stat-label">GitHub Repositories</span>
+</div>
+<div class="hero-stat">
+<span class="hero-stat-num">256+</span>
+<span class="hero-stat-label">DOIs on Zenodo</span>
+</div>
+<div class="hero-stat">
+<span class="hero-stat-num">94.9%</span>
+<span class="hero-stat-label">Avg. Novelty Score</span>
+</div>
+<div class="hero-stat">
+<span class="hero-stat-num">5000+</span>
+<span class="hero-stat-label">Global Downloads</span>
+</div>
+<div class="hero-stat">
+<span class="hero-stat-num">IPA</span>
+<span class="hero-stat-label">Award Shortlisted</span>
+</div>
+</div>
+<a href="#platforms" class="btn">Explore the Complete Governance Architecture</a>
+</div>
 </section>
 
 <!-- ─── IPA AWARD BANNER ─── -->
 <div class="award-banner">
-  <div class="container">
-    <div class="award-inner">
-      <div class="award-icon">🏆</div>
-      <div class="award-content">
-        <span class="award-tag">Official Recognition · 8 December 2025</span>
-        <h3>National IPA Award — Shortlisted</h3>
-        <p>
-          This body of work was officially shortlisted for the National IPA (India Prize for Administration) Award,
-          recognising its contribution to governance innovation, digital knowledge infrastructure, and
-          civilisational frameworks advancing Viksit Bharat 2047.
-        </p>
-      </div>
-    </div>
-  </div>
+<div class="container">
+<div class="award-inner">
+<div class="award-icon">🏆</div>
+<div class="award-content">
+<span class="award-tag">Official Recognition · 8 December 2025</span>
+<h3>National IPA Award — Shortlisted</h3>
+<p>
+This body of work was officially shortlisted for the National IPA (India Prize for Administration) Award,
+recognising its contribution to governance innovation, digital knowledge infrastructure, and
+civilisational frameworks advancing Viksit Bharat 2047.
+</p>
+</div>
+</div>
+</div>
 </div>
 
 <!-- ─── FOUNDATIONAL PLATFORMS ─── -->
 <section class="section platforms-section" id="platforms">
-  <div class="container">
-    <h2 class="section-title">Foundational Governance &amp; Civilisational Architectures</h2>
-    <p class="section-subtitle">
-      Core platforms integrating AI-powered governance tools, policy clarification systems,
-      and civilisational ethics into actionable digital infrastructure.
-    </p>
+<div class="container">
+<h2 class="section-title">Foundational Governance &amp; Civilisational Architectures</h2>
+<p class="section-subtitle">
+Core platforms integrating AI-powered governance tools, policy clarification systems,
+and civilisational ethics into actionable digital infrastructure.
+</p>
 
-    <div class="platforms-grid">
+<div class="platforms-grid">
 
-      <div class="platform-card">
-        <div class="card-icon">🏛️</div>
-        <h3>PMAY Policy Clarification AI</h3>
-        <p>AI-powered platform that demystifies Pradhan Mantri Awas Yojana policies, making housing scheme access transparent and citizen-friendly.</p>
-        <a href="https://helixoriginator.github.io/pmay-policy-clarification-ai/#explainer" target="_blank" class="btn">Explore Platform</a>
-      </div>
+<div class="platform-card">
+<div class="card-icon">🏛️</div>
+<h3>PMAY Policy Clarification AI</h3>
+<p>AI-powered platform that demystifies Pradhan Mantri Awas Yojana policies, making housing scheme access transparent and citizen-friendly.</p>
+<a href="https://helixoriginator.github.io/pmay-policy-clarification-ai/#explainer" target="_blank" class="btn">Explore Platform</a>
+</div>
 
-      <div class="platform-card">
-        <div class="card-icon">💡</div>
-        <h3>Concept Architect</h3>
-        <p>Advanced conceptualization framework for designing governance systems — a structured methodology for innovative institutional thinking.</p>
-        <a href="https://helixoriginator.github.io/concept-architect/" target="_blank" class="btn">Explore Platform</a>
-      </div>
+<div class="platform-card">
+<div class="card-icon">💡</div>
+<h3>Concept Architect</h3>
+<p>Advanced conceptualization framework for designing governance systems — a structured methodology for innovative institutional thinking.</p>
+<a href="https://helixoriginator.github.io/concept-architect/" target="_blank" class="btn">Explore Platform</a>
+</div>
 
-      <div class="platform-card">
-        <div class="card-icon">☸️</div>
-        <h3>Dharma-State Architecture</h3>
-        <p>A Sanatan Framework for Civilisational Governance — integrating India's ancient ethical foundations with modern statecraft and institutional design.</p>
-        <a href="https://helixoriginator.github.io/Dharma-State-Architecture-A-Sanatan-Framework-for-Civilisational-Governance/" target="_blank" class="btn">Explore Framework</a>
-      </div>
+<div class="platform-card">
+<div class="card-icon">☸️</div>
+<h3>Dharma-State Architecture</h3>
+<p>A Sanatan Framework for Civilisational Governance — integrating India's ancient ethical foundations with modern statecraft and institutional design.</p>
+<a href="https://helixoriginator.github.io/Dharma-State-Architecture-A-Sanatan-Framework-for-Civilisational-Governance/" target="_blank" class="btn">Explore Framework</a>
+</div>
 
-      <div class="platform-card">
-        <div class="card-icon">📊</div>
-        <h3>Bharat Governance Transformation 2014–2025</h3>
-        <p>Comprehensive PMO-grade analysis of India's governance transformation — from $1.86T to $3.94T GDP, 500+ schemes redesigned, ₹2.73L Cr corruption eliminated.</p>
-        <a href="https://helixoriginator.github.io/bharat-governance-transformation-2014-2025/" target="_blank" class="btn">Explore Transformation</a>
-      </div>
+<div class="platform-card">
+<div class="card-icon">📊</div>
+<h3>Bharat Governance Transformation 2014–2025</h3>
+<p>Comprehensive PMO-grade analysis of India's governance transformation — from $1.86T to $3.94T GDP, 500+ schemes redesigned, ₹2.73L Cr corruption eliminated.</p>
+<a href="https://helixoriginator.github.io/bharat-governance-transformation-2014-2025/" target="_blank" class="btn">Explore Transformation</a>
+</div>
 
-    </div>
-  </div>
+</div>
+</div>
 </section>
 
 <!-- ─── NETLIFY SHOWCASE ─── -->
 <section class="showcase-section">
-  <div class="container">
-    <h2 class="section-title" style="color:white;">Interactive Governance Platform</h2>
-    <p class="section-subtitle">Experience the full interactive version of Bharat Governance Transformation</p>
-    <div class="showcase-frame">
-      <div class="showcase-tags">
-        <span class="showcase-tag">Digital-First Approach</span>
-        <span class="showcase-tag">Zero Leakage Ecosystem</span>
-        <span class="showcase-tag">Citizen Empowerment</span>
-        <span class="showcase-tag">Viksit Bharat 2047</span>
-      </div>
-      <h3>Building a Viksit Bharat</h3>
-      <p>Redefining the citizen-state relationship through digital infrastructure, transparent systems, and radical accountability.</p>
-      <a href="https://bharat-governance.netlify.app/" target="_blank" class="btn">Launch Interactive Platform →</a>
-    </div>
-  </div>
+<div class="container">
+<h2 class="section-title" style="color:white;">Interactive Governance Platform</h2>
+<p class="section-subtitle">Experience the full interactive version of Bharat Governance Transformation</p>
+<div class="showcase-frame">
+<div class="showcase-tags">
+<span class="showcase-tag">Digital-First Approach</span>
+<span class="showcase-tag">Zero Leakage Ecosystem</span>
+<span class="showcase-tag">Citizen Empowerment</span>
+<span class="showcase-tag">Viksit Bharat 2047</span>
+</div>
+<h3>Building a Viksit Bharat</h3>
+<p>Redefining the citizen-state relationship through digital infrastructure, transparent systems, and radical accountability.</p>
+<a href="https://bharat-governance.netlify.app/" target="_blank" class="btn">Launch Interactive Platform →</a>
+</div>
+</div>
 </section>
 
 <!-- ─── ALL 15 REPOSITORIES ─── -->
 <section class="section repos-section" id="repositories">
-  <div class="container">
-    <h2 class="section-title">Complete Knowledge Repository Portfolio</h2>
-    <p class="section-subtitle">
-      15 open-access digital repositories — a citizen-built national knowledge infrastructure
-      spanning governance, economy, science, health, culture, and civilisational heritage.
-    </p>
+<div class="container">
+<h2 class="section-title">Complete Knowledge Repository Portfolio</h2>
+<p class="section-subtitle">
+15 open-access digital repositories — a citizen-built national knowledge infrastructure
+spanning governance, economy, science, health, culture, and civilisational heritage.
+</p>
 
-    <div class="repos-grid">
+<div class="repos-grid">
 
-      <div class="repo-card">
-        <span class="repo-num">01</span>
-        <div class="repo-info">
-          <h4>Bharat Governance Transformation 2014–2025</h4>
-          <p>A decade-long digital chronicle of India's governance evolution — landmark policy reforms, institutional milestones, and developmental achievements.</p>
-          <a href="https://helixoriginator.github.io/bharat-governance-transformation-2014-2025/" target="_blank" class="repo-link">Explore <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
+<div class="repo-card">
+<span class="repo-num">01</span>
+<div class="repo-info">
+<h4>Bharat Governance Transformation 2014–2025</h4>
+<p>A decade-long digital chronicle of India's governance evolution — landmark policy reforms, institutional milestones, and developmental achievements.</p>
+<a href="https://helixoriginator.github.io/bharat-governance-transformation-2014-2025/" target="_blank" class="repo-link">Explore <i class="fas fa-arrow-right"></i></a>
+</div>
+</div>
 
-      <div class="repo-card">
-        <span class="repo-num">02</span>
-        <div class="repo-info">
-          <h4>National Outcomes Marketplace</h4>
-          <p>Reimagining public service delivery through outcomes-based governance — linking government investments to measurable citizen impact.</p>
-          <a href="https://helixoriginator.github.io/national-outcomes-marketplace/" target="_blank" class="repo-link">Explore <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
+<div class="repo-card">
+<span class="repo-num">02</span>
+<div class="repo-info">
+<h4>National Outcomes Marketplace</h4>
+<p>Reimagining public service delivery through outcomes-based governance — linking government investments to measurable citizen impact.</p>
+<a href="https://helixoriginator.github.io/national-outcomes-marketplace/" target="_blank" class="repo-link">Explore <i class="fas fa-arrow-right"></i></a>
+</div>
+</div>
 
-      <div class="repo-card">
-        <span class="repo-num">03</span>
-        <div class="repo-info">
-          <h4>Grassroots Innovation Taxonomy Repository</h4>
-          <p>India's grassroots genius systematically classified — aligned with the National Innovation Foundation, preserving rural and indigenous innovation.</p>
-          <a href="https://helixoriginator.github.io/Grassroots-Innovation-Taxonomy-Repository-NIF-Aligned-Local-Innovation-Classification/" target="_blank" class="repo-link">Explore <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
+<div class="repo-card">
+<span class="repo-num">03</span>
+<div class="repo-info">
+<h4>Grassroots Innovation Taxonomy Repository</h4>
+<p>India's grassroots genius systematically classified — aligned with the National Innovation Foundation, preserving rural and indigenous innovation.</p>
+<a href="https://helixoriginator.github.io/Grassroots-Innovation-Taxonomy-Repository-NIF-Aligned-Local-Innovation-Classification/" target="_blank" class="repo-link">Explore <i class="fas fa-arrow-right"></i></a>
+</div>
+</div>
 
-      <div class="repo-card">
-        <span class="repo-num">04</span>
-        <div class="repo-info">
-          <h4>Temporal GIS — India's Historical Geospatial Evolution</h4>
-          <p>A time-layered geospatial atlas of India — visualizing territorial, demographic, and infrastructural evolution across centuries.</p>
-          <a href="https://helixoriginator.github.io/temporal-gis-india-historical-geospatial-evolution/" target="_blank" class="repo-link">Explore <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
+<div class="repo-card">
+<span class="repo-num">04</span>
+<div class="repo-info">
+<h4>Temporal GIS — India's Historical Geospatial Evolution</h4>
+<p>A time-layered geospatial atlas of India — visualizing territorial, demographic, and infrastructural evolution across centuries.</p>
+<a href="https://helixoriginator.github.io/temporal-gis-india-historical-geospatial-evolution/" target="_blank" class="repo-link">Explore <i class="fas fa-arrow-right"></i></a>
+</div>
+</div>
 
-      <div class="repo-card">
-        <span class="repo-num">05</span>
-        <div class="repo-info">
-          <h4>Data Philanthropy Framework</h4>
-          <p>A visionary model for voluntary ethical sharing of private data for public good — creating India's data-driven social transformation architecture.</p>
-          <a href="https://helixoriginator.github.io/data-philanthropy-framework/" target="_blank" class="repo-link">Explore <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
+<div class="repo-card">
+<span class="repo-num">05</span>
+<div class="repo-info">
+<h4>Data Philanthropy Framework</h4>
+<p>A visionary model for voluntary ethical sharing of private data for public good — creating India's data-driven social transformation architecture.</p>
+<a href="https://helixoriginator.github.io/data-philanthropy-framework/" target="_blank" class="repo-link">Explore <i class="fas fa-arrow-right"></i></a>
+</div>
+</div>
 
-      <div class="repo-card">
-        <span class="repo-num">06</span>
-        <div class="repo-info">
-          <h4>Project Ankitan — National Land Knowledge &amp; Dispute Resolution</h4>
-          <p>Addressing India's persistent land litigation challenge — a structured national repository for land records, legal knowledge, and dispute resolution.</p>
-          <a href="https://helixoriginator.github.io/Project-Ankitan-National-Land-Knowledge-Dispute-Resolution-Repository/" target="_blank" class="repo-link">Explore <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
+<div class="repo-card">
+<span class="repo-num">06</span>
+<div class="repo-info">
+<h4>Project Ankitan — National Land Knowledge &amp; Dispute Resolution</h4>
+<p>Addressing India's persistent land litigation challenge — a structured national repository for land records, legal knowledge, and dispute resolution.</p>
+<a href="https://helixoriginator.github.io/Project-Ankitan-National-Land-Knowledge-Dispute-Resolution-Repository/" target="_blank" class="repo-link">Explore <i class="fas fa-arrow-right"></i></a>
+</div>
+</div>
 
-      <div class="repo-card">
-        <span class="repo-num">07</span>
-        <div class="repo-info">
-          <h4>Ayushman Bharat Health Data Intelligence Repository</h4>
-          <p>Augmenting India's flagship health mission with an intelligent data layer — enabling evidence-based health policy and service delivery optimisation.</p>
-          <a href="https://helixoriginator.github.io/Ayushman-Bharat-Health-Data-Intelligence-Repository-ABHDIR-/" target="_blank" class="repo-link">Explore <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
+<div class="repo-card">
+<span class="repo-num">07</span>
+<div class="repo-info">
+<h4>Ayushman Bharat Health Data Intelligence Repository</h4>
+<p>Augmenting India's flagship health mission with an intelligent data layer — enabling evidence-based health policy and service delivery optimisation.</p>
+<a href="https://helixoriginator.github.io/Ayushman-Bharat-Health-Data-Intelligence-Repository-ABHDIR-/" target="_blank" class="repo-link">Explore <i class="fas fa-arrow-right"></i></a>
+</div>
+</div>
 
-      <div class="repo-card">
-        <span class="repo-num">08</span>
-        <div class="repo-info">
-          <h4>Atmanirbhar &amp; Make In India — MSME Cluster Database</h4>
-          <p>Fuelling India's self-reliance agenda with granular data — structured database of MSME industrial clusters supporting targeted policy and investment mapping.</p>
-          <a href="https://helixoriginator.github.io/atmanirbhar-makeindia-msme-cluster-database/" target="_blank" class="repo-link">Explore <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
+<div class="repo-card">
+<span class="repo-num">08</span>
+<div class="repo-info">
+<h4>Atmanirbhar &amp; Make In India — MSME Cluster Database</h4>
+<p>Fuelling India's self-reliance agenda with granular data — structured database of MSME industrial clusters supporting targeted policy and investment mapping.</p>
+<a href="https://helixoriginator.github.io/atmanirbhar-makeindia-msme-cluster-database/" target="_blank" class="repo-link">Explore <i class="fas fa-arrow-right"></i></a>
+</div>
+</div>
 
-      <div class="repo-card">
-        <span class="repo-num">09</span>
-        <div class="repo-info">
-          <h4>Bharat Vikas Mandal — Vedic Economic Framework</h4>
-          <p>Articulating India's civilisational economic wisdom — integrating Vedic economic principles with contemporary development theory for sustainable growth.</p>
-          <a href="https://helixoriginator.github.io/Bharat-Vikas-Mandal-Vedic-Economic-Framework/" target="_blank" class="repo-link">Explore <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
+<div class="repo-card">
+<span class="repo-num">09</span>
+<div class="repo-info">
+<h4>Bharat Vikas Mandal — Vedic Economic Framework</h4>
+<p>Articulating India's civilisational economic wisdom — integrating Vedic economic principles with contemporary development theory for sustainable growth.</p>
+<a href="https://helixoriginator.github.io/Bharat-Vikas-Mandal-Vedic-Economic-Framework/" target="_blank" class="repo-link">Explore <i class="fas fa-arrow-right"></i></a>
+</div>
+</div>
 
-      <div class="repo-card">
-        <span class="repo-num">10</span>
-        <div class="repo-info">
-          <h4>National Framework — Science Portfolio</h4>
-          <p>Strategic organisation and prioritisation of India's scientific research investments — maximising innovation output and global competitiveness.</p>
-          <a href="https://helixoriginator.github.io/national-framework-science-portfolio-kallol-chakrabarti/" target="_blank" class="repo-link">Explore <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
+<div class="repo-card">
+<span class="repo-num">10</span>
+<div class="repo-info">
+<h4>National Framework — Science Portfolio</h4>
+<p>Strategic organisation and prioritisation of India's scientific research investments — maximising innovation output and global competitiveness.</p>
+<a href="https://helixoriginator.github.io/national-framework-science-portfolio-kallol-chakrabarti/" target="_blank" class="repo-link">Explore <i class="fas fa-arrow-right"></i></a>
+</div>
+</div>
 
-      <div class="repo-card">
-        <span class="repo-num">11</span>
-        <div class="repo-info">
-          <h4>Impact Token Economy — Blockchain Social Incentives</h4>
-          <p>Harnessing Web3 for social good — blockchain-based incentive architecture rewarding pro-social citizen behaviour aligned with national development.</p>
-          <a href="https://helixoriginator.github.io/impact-token-economy-blockchain-social-incentives/" target="_blank" class="repo-link">Explore <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
+<div class="repo-card">
+<span class="repo-num">11</span>
+<div class="repo-info">
+<h4>Impact Token Economy — Blockchain Social Incentives</h4>
+<p>Harnessing Web3 for social good — blockchain-based incentive architecture rewarding pro-social citizen behaviour aligned with national development.</p>
+<a href="https://helixoriginator.github.io/impact-token-economy-blockchain-social-incentives/" target="_blank" class="repo-link">Explore <i class="fas fa-arrow-right"></i></a>
+</div>
+</div>
 
-      <div class="repo-card">
-        <span class="repo-num">12</span>
-        <div class="repo-info">
-          <h4>Sanatan Answers</h4>
-          <p>A dedicated digital platform providing authentic, accessible answers rooted in Sanatan Dharma — India's ancient philosophical wisdom structured for the modern world.</p>
-          <a href="https://sanatan-answers.netlify.app/" target="_blank" class="repo-link">Visit Platform <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
+<div class="repo-card">
+<span class="repo-num">12</span>
+<div class="repo-info">
+<h4>Sanatan Answers</h4>
+<p>A dedicated digital platform providing authentic, accessible answers rooted in Sanatan Dharma — India's ancient philosophical wisdom structured for the modern world.</p>
+<a href="https://sanatan-answers.netlify.app/" target="_blank" class="repo-link">Visit Platform <i class="fas fa-arrow-right"></i></a>
+</div>
+</div>
 
-      <div class="repo-card">
-        <span class="repo-num">13</span>
-        <div class="repo-info">
-          <h4>Sanatan Encyclopedia</h4>
-          <p>India's civilisational memory, digitised — an encyclopaedic repository of Sanatan knowledge, texts, traditions, and concepts for present and future generations.</p>
-          <a href="https://sanatan-encyclopedia-1.netlify.app/" target="_blank" class="repo-link">Visit Platform <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
+<div class="repo-card">
+<span class="repo-num">13</span>
+<div class="repo-info">
+<h4>Sanatan Encyclopedia</h4>
+<p>India's civilisational memory, digitised — an encyclopaedic repository of Sanatan knowledge, texts, traditions, and concepts for present and future generations.</p>
+<a href="https://sanatan-encyclopedia-1.netlify.app/" target="_blank" class="repo-link">Visit Platform <i class="fas fa-arrow-right"></i></a>
+</div>
+</div>
 
-      <div class="repo-card">
-        <span class="repo-num">14</span>
-        <div class="repo-info">
-          <h4>Sanatan Economic Integration — India</h4>
-          <p>Integrating India's dharmic values into its economic architecture — demonstrating how Sanatan principles of sustainability and dharma can guide India's future.</p>
-          <a href="https://helixoriginator.github.io/sanatan-economic-integration-india/" target="_blank" class="repo-link">Explore <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
+<div class="repo-card">
+<span class="repo-num">14</span>
+<div class="repo-info">
+<h4>Sanatan Economic Integration — India</h4>
+<p>Integrating India's dharmic values into its economic architecture — demonstrating how Sanatan principles of sustainability and dharma can guide India's future.</p>
+<a href="https://helixoriginator.github.io/sanatan-economic-integration-india/" target="_blank" class="repo-link">Explore <i class="fas fa-arrow-right"></i></a>
+</div>
+</div>
 
-      <div class="repo-card">
-        <span class="repo-num">15</span>
-        <div class="repo-info">
-          <h4>Helix Library — World's Largest Independent Digital Encyclopedia</h4>
-          <p>An ambitious independent digital encyclopedia aspiring to be the world's most comprehensive freely accessible repository of human knowledge, with special focus on India.</p>
-          <a href="https://helixoriginator.github.io/World-Largest-Independent-Digital-Encyclopedia-Helix-Library/" target="_blank" class="repo-link">Explore <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
+<div class="repo-card">
+<span class="repo-num">15</span>
+<div class="repo-info">
+<h4>Helix Library — World's Largest Independent Digital Encyclopedia</h4>
+<p>An ambitious independent digital encyclopedia aspiring to be the world's most comprehensive freely accessible repository of human knowledge, with special focus on India.</p>
+<a href="https://helixoriginator.github.io/World-Largest-Independent-Digital-Encyclopedia-Helix-Library/" target="_blank" class="repo-link">Explore <i class="fas fa-arrow-right"></i></a>
+</div>
+</div>
 
-    </div>
-  </div>
+</div>
+</div>
 </section>
 
 <!-- ─── SANATAN SECTION ─── -->
 <section class="sanatan-section" id="sanatan">
-  <div class="container">
-    <h2 class="section-title">Sanatan Dharma Digital Platforms</h2>
-    <p class="section-subtitle">
-      Authentic, structured, AI-accessible knowledge countering misinformation and
-      making India's unbroken civilisational wisdom available to every seeker worldwide.
-    </p>
+<div class="container">
+<h2 class="section-title">Sanatan Dharma Digital Platforms</h2>
+<p class="section-subtitle">
+Authentic, structured, AI-accessible knowledge countering misinformation and
+making India's unbroken civilisational wisdom available to every seeker worldwide.
+</p>
 
-    <div class="sanatan-grid">
+<div class="sanatan-grid">
 
-      <div class="sanatan-card">
-        <span class="sanatan-symbol">🕉️</span>
-        <h3>Sanatan Answers</h3>
-        <p>Provides authentic, well-researched answers rooted in Sanatan Dharma. Addresses common myths, misconceptions and distortions with scriptural accuracy and philosophical depth.</p>
-        <a href="https://sanatan-answers.netlify.app/" target="_blank" class="btn">Visit Sanatan Answers</a>
-      </div>
+<div class="sanatan-card samyata-card">
+<div class="samyata-world-badge">🌍 World's First Ready Reckoner</div>
+<span class="sanatan-symbol">☸️</span>
+<h3 style="color:var(--sovereign-gold-light);">Sanatana Samyata</h3>
+<p>The <strong style="color:var(--sovereign-gold-light);">world's first comprehensive Dharma Defense Manual</strong> — a landmark ready reckoner that systematically addresses and dispels the most widespread myths and distortions about Hinduism. Evidence drawn directly from Hindu scriptures, historical records, and contemporary social realities. Counters narratives used by radical conversion lobbies with structured, point-by-point rebuttals rooted in core dharmic principles.</p>
+<div class="samyata-metrics">
+<span>👁️ 764 Views</span>
+<span>📥 444 Downloads</span>
+<span>🔗 DOI Registered</span>
+<span>✅ Google Confirmed</span>
+</div>
+<a href="https://doi.org/10.5281/zenodo.16714489" target="_blank" class="btn">Read on Zenodo →</a>
+</div>
 
-      <div class="sanatan-card">
-        <span class="sanatan-symbol">📖</span>
-        <h3>Sanatan Encyclopedia</h3>
-        <p>India's civilisational memory digitised — an encyclopaedic repository of Sanatan knowledge, texts, traditions, and concepts preserving Bharat's unbroken cultural heritage.</p>
-        <a href="https://sanatan-encyclopedia-1.netlify.app/" target="_blank" class="btn">Visit Encyclopedia</a>
-      </div>
+<div class="sanatan-card">
+<span class="sanatan-symbol">🕉️</span>
+<h3>Sanatan Answers</h3>
+<p>Provides authentic, well-researched answers rooted in Sanatan Dharma. Addresses common myths, misconceptions and distortions with scriptural accuracy and philosophical depth.</p>
+<a href="https://sanatan-answers.netlify.app/" target="_blank" class="btn">Visit Sanatan Answers</a>
+</div>
 
-      <div class="sanatan-card">
-        <span class="sanatan-symbol">💠</span>
-        <h3>Sanatan Economic Integration</h3>
-        <p>A forward-looking framework integrating India's dharmic values into economic architecture — demonstrating how timeless Sanatan principles can guide India's economic future.</p>
-        <a href="https://helixoriginator.github.io/sanatan-economic-integration-india/" target="_blank" class="btn">Explore Framework</a>
-      </div>
+<div class="sanatan-card">
+<span class="sanatan-symbol">📖</span>
+<h3>Sanatan Encyclopedia</h3>
+<p>India's civilisational memory digitised — an encyclopaedic repository of Sanatan knowledge, texts, traditions, and concepts preserving Bharat's unbroken cultural heritage.</p>
+<a href="https://sanatan-encyclopedia-1.netlify.app/" target="_blank" class="btn">Visit Encyclopedia</a>
+</div>
 
-    </div>
-  </div>
+<div class="sanatan-card">
+<span class="sanatan-symbol">💠</span>
+<h3>Sanatan Economic Integration</h3>
+<p>A forward-looking framework integrating India's dharmic values into economic architecture — demonstrating how timeless Sanatan principles can guide India's economic future.</p>
+<a href="https://helixoriginator.github.io/sanatan-economic-integration-india/" target="_blank" class="btn">Explore Framework</a>
+</div>
+
+</div>
+</div>
 </section>
 
 <!-- ─── AI VALIDATION ─── -->
 <section class="ai-section">
-  <div class="container">
-    <h2 class="section-title">Global AI Knowledge Validation</h2>
-    <p class="section-subtitle">
-      Independent validation by global AI systems confirms these frameworks have entered
-      the world's knowledge ecosystem — cited, referenced, and utilised at scale.
-    </p>
+<div class="container">
+<h2 class="section-title">Global AI Knowledge Validation</h2>
+<p class="section-subtitle">
+Independent validation by global AI systems confirms these frameworks have entered
+the world's knowledge ecosystem — cited, referenced, and utilised at scale.
+</p>
 
-    <div class="ai-grid">
-      <div class="ai-card">
-        <div class="ai-card-icon">🤖</div>
-        <h4>AI System Recognition</h4>
-        <p>These governance frameworks and Sanatan Dharma platforms have been independently recognised and referenced by global AI knowledge systems including Google AI.</p>
-      </div>
-      <div class="ai-card">
-        <div class="ai-card-icon">🌐</div>
-        <h4>Global Knowledge Entry</h4>
-        <p>Open-access repositories have entered the global information ecosystem, making India's governance innovations and civilisational knowledge accessible worldwide.</p>
-      </div>
-      <div class="ai-card">
-        <div class="ai-card-icon">📋</div>
-        <h4>25+ Evidence Screenshots</h4>
-        <p>Documented evidence of AI validation across governance transformation content, Sanatan Dharma platforms, and policy frameworks — confirming accuracy and global utility.</p>
-      </div>
-      <div class="ai-card">
-        <div class="ai-card-icon">✅</div>
-        <h4>Third-Party Verification</h4>
-        <p>Independent AI validation provides objective, third-party confirmation that this content meets standards of accuracy and relevance demanded by global knowledge systems.</p>
-      </div>
-    </div>
+<div class="ai-grid">
+<div class="ai-card">
+<div class="ai-card-icon">🤖</div>
+<h4>AI System Recognition</h4>
+<p>These governance frameworks and Sanatan Dharma platforms have been independently recognised and referenced by global AI knowledge systems including Google AI.</p>
+</div>
+<div class="ai-card">
+<div class="ai-card-icon">🌐</div>
+<h4>Global Knowledge Entry</h4>
+<p>Open-access repositories have entered the global information ecosystem, making India's governance innovations and civilisational knowledge accessible worldwide.</p>
+</div>
+<div class="ai-card">
+<div class="ai-card-icon">📋</div>
+<h4>25+ Evidence Screenshots</h4>
+<p>Documented evidence of AI validation across governance transformation content, Sanatan Dharma platforms, and policy frameworks — confirming accuracy and global utility.</p>
+</div>
+<div class="ai-card">
+<div class="ai-card-icon">✅</div>
+<h4>Third-Party Verification</h4>
+<p>Independent AI validation provides objective, third-party confirmation that this content meets standards of accuracy and relevance demanded by global knowledge systems.</p>
+</div>
+</div>
 
-    <div class="ai-evidence-note">
-      <p>"Validated by global AI systems — these frameworks are already serving India's governance narrative at international scale."</p>
-    </div>
-  </div>
+<div class="ai-evidence-note">
+<p>"Validated by global AI systems — these frameworks are already serving India's governance narrative at international scale."</p>
+</div>
+</div>
 </section>
 
 <!-- ─── PUBLICATION ─── -->
 <section class="pub-section">
-  <div class="container">
-    <h2 class="section-title" style="color:white;">Zenodo Academic Publication</h2>
-    <p class="section-subtitle">Original research contributing new institutional theory to global governance literature</p>
+<div class="container">
+<h2 class="section-title" style="color:white;">Zenodo Academic Publication</h2>
+<p class="section-subtitle">Original research contributing new institutional theory to global governance literature</p>
 
-    <div class="pub-card">
-      <div class="pub-badge-block">
-        <div class="pub-badge">📄</div>
-        <span>Zenodo</span>
-        <span style="color:#555;font-size:0.7rem;margin-top:4px;">Open Repository</span>
-        <span style="color:var(--emerald-accent);font-size:0.7rem;font-weight:700;margin-top:4px;">Feb 2026</span>
-      </div>
-      <div class="pub-content">
-        <h3>Civic Reflexivity Engines: A New Framework for Democratic AI Governance</h3>
-        <p>Introduces an entirely new institutional form — Civic Reflexivity Engines (CREs) — in which algorithmic systems function as instruments of collective self-examination. Proposes reflexive co-constitution as its theoretical foundation, shifting computation from prediction to interrogation and from automation to exposure.</p>
-        <div class="pub-meta">
-          <span class="pub-tag">World-First Concept</span>
-          <span class="pub-tag">DOI: 10.5281/zenodo.18524801</span>
-          <span class="pub-tag">Open Access</span>
-          <span class="pub-tag">ORCID: 0009-0007-4971-8936</span>
-        </div>
-        <a href="https://doi.org/10.5281/zenodo.18524801" target="_blank" class="btn">Read Full Paper →</a>
-      </div>
-    </div>
-  </div>
+<div class="pub-card">
+<div class="pub-badge-block">
+<div class="pub-badge">📄</div>
+<span>Zenodo</span>
+<span style="color:#555;font-size:0.7rem;margin-top:4px;">Open Repository</span>
+<span style="color:var(--emerald-accent);font-size:0.7rem;font-weight:700;margin-top:4px;">Feb 2026</span>
+</div>
+<div class="pub-content">
+<h3>Civic Reflexivity Engines: A New Framework for Democratic AI Governance</h3>
+<p>Introduces an entirely new institutional form — Civic Reflexivity Engines (CREs) — in which algorithmic systems function as instruments of collective self-examination. Proposes reflexive co-constitution as its theoretical foundation, shifting computation from prediction to interrogation and from automation to exposure.</p>
+<div class="pub-meta">
+<span class="pub-tag">World-First Concept</span>
+<span class="pub-tag">DOI: 10.5281/zenodo.18524801</span>
+<span class="pub-tag">Open Access</span>
+<span class="pub-tag">ORCID: 0009-0007-4971-8936</span>
+</div>
+<a href="https://doi.org/10.5281/zenodo.18524801" target="_blank" class="btn">Read Full Paper →</a>
+</div>
+</div>
+</div>
 </section>
 
 <!-- ─── PIONEER FRAMEWORKS ─── -->
 <section class="pioneer-section" id="pioneer">
-  <div class="container">
-    <h2 class="section-title">Pioneer Governance Frameworks</h2>
-    <p class="section-subtitle">
-      Independently developed governance doctrines integrating civilisational ethics, AI-state systems,
-      and sovereign institutional design — positioned at the frontier of global governance innovation.
-    </p>
+<div class="container">
+<h2 class="section-title">Pioneer Governance Frameworks</h2>
+<p class="section-subtitle">
+Independently developed governance doctrines integrating civilisational ethics, AI-state systems,
+and sovereign institutional design — positioned at the frontier of global governance innovation.
+</p>
 
-    <div class="pioneer-features">
-      <div class="pioneer-feature">
-        <i class="fas fa-brain"></i>
-        <h4>AI-State Systems</h4>
-        <p>Novel frameworks for integrating artificial intelligence into democratic governance architecture</p>
-      </div>
-      <div class="pioneer-feature">
-        <i class="fas fa-landmark"></i>
-        <h4>Civilisational Ethics</h4>
-        <p>Governance models grounded in India's 5,000-year civilisational tradition and dharmic principles</p>
-      </div>
-      <div class="pioneer-feature">
-        <i class="fas fa-shield-alt"></i>
-        <h4>Sovereign Design</h4>
-        <p>Institutional architectures that preserve national sovereignty in the age of global digital systems</p>
-      </div>
-      <div class="pioneer-feature">
-        <i class="fas fa-globe-asia"></i>
-        <h4>Global Scalability</h4>
-        <p>Research-backed models exportable as scalable ethical statecraft frameworks for democracies worldwide</p>
-      </div>
-    </div>
+<div class="pioneer-features">
+<div class="pioneer-feature">
+<i class="fas fa-brain"></i>
+<h4>AI-State Systems</h4>
+<p>Novel frameworks for integrating artificial intelligence into democratic governance architecture</p>
+</div>
+<div class="pioneer-feature">
+<i class="fas fa-landmark"></i>
+<h4>Civilisational Ethics</h4>
+<p>Governance models grounded in India's 5,000-year civilisational tradition and dharmic principles</p>
+</div>
+<div class="pioneer-feature">
+<i class="fas fa-shield-alt"></i>
+<h4>Sovereign Design</h4>
+<p>Institutional architectures that preserve national sovereignty in the age of global digital systems</p>
+</div>
+<div class="pioneer-feature">
+<i class="fas fa-globe-asia"></i>
+<h4>Global Scalability</h4>
+<p>Research-backed models exportable as scalable ethical statecraft frameworks for democracies worldwide</p>
+</div>
+</div>
 
-    <a href="https://helixoriginator.github.io/Pioneer-Frameworks-Kallol-Chakrabarti/" target="_blank" class="btn">
-      Explore Pioneer Frameworks →
-    </a>
-  </div>
+<a href="https://helixoriginator.github.io/Pioneer-Frameworks-Kallol-Chakrabarti/" target="_blank" class="btn">
+Explore Pioneer Frameworks →
+</a>
+</div>
 </section>
 
 <!-- ─── HELIX LIBRARY SHOWCASE ─── -->
 <section class="helix-section">
-  <div class="container">
-    <div class="helix-badge">World Achievement · Verified by DeSci Labs, Switzerland</div>
-    <h2 class="section-title" style="color:white;">Helix Library</h2>
-    <p class="section-subtitle">The World's Largest Independent Digital Encyclopedia — a monumental achievement in independent citizen research, freely accessible to every person on Earth.</p>
+<div class="container">
+<div class="helix-badge">World Achievement · Verified by DeSci Labs, Switzerland</div>
+<h2 class="section-title" style="color:white;">Helix Library</h2>
+<p class="section-subtitle">The World's Largest Independent Digital Encyclopedia — a monumental achievement in independent citizen research, freely accessible to every person on Earth.</p>
 
-    <div class="helix-stats-grid">
-      <div class="helix-stat-card">
-        <span class="helix-num">256+</span>
-        <span class="helix-label">DOIs on Zenodo</span>
-        <span class="helix-sub">Globally Registered Research</span>
-      </div>
-      <div class="helix-stat-card">
-        <span class="helix-num">190+</span>
-        <span class="helix-label">Original Frameworks</span>
-        <span class="helix-sub">Across All Domains</span>
-      </div>
-      <div class="helix-stat-card">
-        <span class="helix-num">94.9%</span>
-        <span class="helix-label">Avg. Novelty Score</span>
-        <span class="helix-sub">DeSci Labs Verified</span>
-      </div>
-      <div class="helix-stat-card">
-        <span class="helix-num">4</span>
-        <span class="helix-label">Perfect 100% Scores</span>
-        <span class="helix-sub">Highest Novelty Achievable</span>
-      </div>
-      <div class="helix-stat-card">
-        <span class="helix-num">5000+</span>
-        <span class="helix-label">Global Downloads</span>
-        <span class="helix-sub">Worldwide Research Impact</span>
-      </div>
-      <div class="helix-stat-card">
-        <span class="helix-num">25</span>
-        <span class="helix-label">DeSci Articles</span>
-        <span class="helix-sub">All Scoring 90%+</span>
-      </div>
-    </div>
+<div class="helix-stats-grid">
+<div class="helix-stat-card">
+<span class="helix-num">256+</span>
+<span class="helix-label">DOIs on Zenodo</span>
+<span class="helix-sub">Globally Registered Research</span>
+</div>
+<div class="helix-stat-card">
+<span class="helix-num">190+</span>
+<span class="helix-label">Original Frameworks</span>
+<span class="helix-sub">Across All Domains</span>
+</div>
+<div class="helix-stat-card">
+<span class="helix-num">94.9%</span>
+<span class="helix-label">Avg. Novelty Score</span>
+<span class="helix-sub">DeSci Labs Verified</span>
+</div>
+<div class="helix-stat-card">
+<span class="helix-num">4</span>
+<span class="helix-label">Perfect 100% Scores</span>
+<span class="helix-sub">Highest Novelty Achievable</span>
+</div>
+<div class="helix-stat-card">
+<span class="helix-num">5000+</span>
+<span class="helix-label">Global Downloads</span>
+<span class="helix-sub">Worldwide Research Impact</span>
+</div>
+<div class="helix-stat-card">
+<span class="helix-num">25</span>
+<span class="helix-label">DeSci Articles</span>
+<span class="helix-sub">All Scoring 90%+</span>
+</div>
+</div>
 
-    <div class="helix-concepts">
-      <h3>Key Original Concepts Developed</h3>
-      <div class="concepts-grid">
-        <div class="concept-tag">Helix Originator</div>
-        <div class="concept-tag">Docu Helix</div>
-        <div class="concept-tag">Velvet Iron Governance</div>
-        <div class="concept-tag">Convergence Doctrine</div>
-        <div class="concept-tag">Quantum Ethical Uncertainty</div>
-        <div class="concept-tag">Civic Reflexivity Engines</div>
-        <div class="concept-tag">Cognitive Microbes</div>
-        <div class="concept-tag">Narrative Quantum Entanglement</div>
-        <div class="concept-tag">Helix Kallol Protocol</div>
-        <div class="concept-tag">Reverse Proxy Warfare</div>
-        <div class="concept-tag">Employment Shopping</div>
-        <div class="concept-tag">Positive Staircase Model</div>
-      </div>
-    </div>
+<div class="helix-concepts">
+<h3>Key Original Concepts Developed</h3>
+<div class="concepts-grid">
+<div class="concept-tag">Helix Originator</div>
+<div class="concept-tag">Docu Helix</div>
+<div class="concept-tag">Velvet Iron Governance</div>
+<div class="concept-tag">Convergence Doctrine</div>
+<div class="concept-tag">Quantum Ethical Uncertainty</div>
+<div class="concept-tag">Civic Reflexivity Engines</div>
+<div class="concept-tag">Cognitive Microbes</div>
+<div class="concept-tag">Narrative Quantum Entanglement</div>
+<div class="concept-tag">Helix Kallol Protocol</div>
+<div class="concept-tag">Reverse Proxy Warfare</div>
+<div class="concept-tag">Employment Shopping</div>
+<div class="concept-tag">Positive Staircase Model</div>
+</div>
+</div>
 
-    <div style="text-align:center;margin-top:50px;">
-      <a href="https://helixoriginator.github.io/World-Largest-Independent-Digital-Encyclopedia-Helix-Library/" target="_blank" class="btn">Explore Helix Library →</a>
-    </div>
-  </div>
+<div style="text-align:center;margin-top:50px;">
+<a href="https://helixoriginator.github.io/World-Largest-Independent-Digital-Encyclopedia-Helix-Library/" target="_blank" class="btn">Explore Helix Library →</a>
+</div>
+</div>
 </section>
 
 <!-- ─── DESCI LABS SECTION ─── -->
 <section class="desci-section">
-  <div class="container">
-    <h2 class="section-title" style="color:white;">DeSci Labs Verification</h2>
-    <p class="section-subtitle">25 research articles independently verified by DeSci Labs, Switzerland — all achieving 90% or above on Novelty & Content Score</p>
+<div class="container">
+<h2 class="section-title" style="color:white;">DeSci Labs Verification</h2>
+<p class="section-subtitle">25 research articles independently verified by DeSci Labs, Switzerland — all achieving 90% or above on Novelty & Content Score</p>
 
-    <div class="desci-header-card">
-      <div class="desci-logo-block">
-        <div class="desci-icon">🔬</div>
-        <span class="desci-verified-tag">Verified by DeSci Labs</span>
-        <span class="desci-country">Switzerland</span>
-      </div>
-      <div class="desci-summary">
-        <div class="desci-summary-stat">
-          <span class="dsnum">25</span>
-          <span class="dslabel">Articles</span>
-        </div>
-        <div class="desci-summary-stat">
-          <span class="dsnum">94.9%</span>
-          <span class="dslabel">Avg Novelty</span>
-        </div>
-        <div class="desci-summary-stat">
-          <span class="dsnum">4</span>
-          <span class="dslabel">Perfect 100%</span>
-        </div>
-        <div class="desci-summary-stat">
-          <span class="dsnum">90%+</span>
-          <span class="dslabel">All Articles</span>
-        </div>
-      </div>
-    </div>
+<div class="desci-header-card">
+<div class="desci-logo-block">
+<div class="desci-icon">🔬</div>
+<span class="desci-verified-tag">Verified by DeSci Labs</span>
+<span class="desci-country">Switzerland</span>
+</div>
+<div class="desci-summary">
+<div class="desci-summary-stat">
+<span class="dsnum">25</span>
+<span class="dslabel">Articles</span>
+</div>
+<div class="desci-summary-stat">
+<span class="dsnum">94.9%</span>
+<span class="dslabel">Avg Novelty</span>
+</div>
+<div class="desci-summary-stat">
+<span class="dsnum">4</span>
+<span class="dslabel">Perfect 100%</span>
+</div>
+<div class="desci-summary-stat">
+<span class="dsnum">90%+</span>
+<span class="dslabel">All Articles</span>
+</div>
+</div>
+</div>
 
-    <div class="desci-articles-grid">
+<div class="desci-articles-grid">
 
-      <div class="desci-article-card perfect">
-        <span class="novelty-badge perfect-badge">100%</span>
-        <span class="article-cat">Economy</span>
-        <h4>The RIC Nexus — Tripartite Circular Economy & Digital Trade Ecosystem</h4>
-      </div>
-      <div class="desci-article-card perfect">
-        <span class="novelty-badge perfect-badge">100%</span>
-        <span class="article-cat">Geopolitics</span>
-        <h4>Strategic Continuity: Ancient Indian Wisdom and Contemporary Military Praxis</h4>
-      </div>
-      <div class="desci-article-card perfect">
-        <span class="novelty-badge perfect-badge">100%</span>
-        <span class="article-cat">Security</span>
-        <h4>The Shadow Doctrine: Guns, Dams, and Diplomacy in Asymmetric Conflict</h4>
-      </div>
-      <div class="desci-article-card perfect">
-        <span class="novelty-badge perfect-badge">100%</span>
-        <span class="article-cat">Security</span>
-        <h4>Reverse Proxy Warfare: A Novel Strategy for Subverting State-Sponsored Terrorism</h4>
-      </div>
-      <div class="desci-article-card">
-        <span class="novelty-badge">99%</span>
-        <span class="article-cat">Economy</span>
-        <h4>The Positive Staircase Model: A Decentralized Framework for Employment</h4>
-      </div>
-      <div class="desci-article-card">
-        <span class="novelty-badge">98%</span>
-        <span class="article-cat">Sociology</span>
-        <h4>Resilient by Design: Ethical Lessons from Conflict Zones for Sustainable Employment</h4>
-      </div>
-      <div class="desci-article-card">
-        <span class="novelty-badge">97%</span>
-        <span class="article-cat">AI & Technology</span>
-        <h4>Addressing Anomalies in Defining Plagiarized Content: A Framework for Fair Attribution</h4>
-      </div>
-      <div class="desci-article-card">
-        <span class="novelty-badge">97%</span>
-        <span class="article-cat">Economy</span>
-        <h4>Helix Kallol Protocol (HKP): A Legally Enforceable System for Ethical Employment</h4>
-      </div>
-      <div class="desci-article-card">
-        <span class="novelty-badge">96%</span>
-        <span class="article-cat">Geopolitics</span>
-        <h4>The Sovereign Fulcrum: India's Doctrinal Metamorphosis in Asymmetric Contestation</h4>
-      </div>
-      <div class="desci-article-card">
-        <span class="novelty-badge">96%</span>
-        <span class="article-cat">Sociology</span>
-        <h4>Contested Legacies: Analyzing the Impact of Controversial Legislations</h4>
-      </div>
-      <div class="desci-article-card">
-        <span class="novelty-badge">95%</span>
-        <span class="article-cat">Sociology</span>
-        <h4>The Indo-China Renaissance Initiative (ICRI): A Neo-Humanistic Framework</h4>
-      </div>
-      <div class="desci-article-card">
-        <span class="novelty-badge">95%</span>
-        <span class="article-cat">AI & Technology</span>
-        <h4>HELIX: India's Neural-Powered Predictive Security Framework to Combat Crime</h4>
-      </div>
-      <div class="desci-article-card">
-        <span class="novelty-badge">95%</span>
-        <span class="article-cat">Sociology</span>
-        <h4>Shakti as Sovereign Wisdom: Bharat's Enduring Governance Ethos</h4>
-      </div>
-      <div class="desci-article-card">
-        <span class="novelty-badge">94%</span>
-        <span class="article-cat">Security</span>
-        <h4>The Silent War: Rhetoric, Cognition, and Global Conflict in the 21st Century</h4>
-      </div>
-      <div class="desci-article-card">
-        <span class="novelty-badge">94%</span>
-        <span class="article-cat">Geopolitics</span>
-        <h4>Narrative Quantum Entanglement in Geopolitical Systems (NQEQS)</h4>
-      </div>
-      <div class="desci-article-card">
-        <span class="novelty-badge">94%</span>
-        <span class="article-cat">Sociology</span>
-        <h4>The Janvarta Framework: Reimagining Governance Through Ancient Wisdom</h4>
-      </div>
-      <div class="desci-article-card">
-        <span class="novelty-badge">93%</span>
-        <span class="article-cat">AI & Technology</span>
-        <h4>Employment Shopping — AI-Powered Mobile Hubs for Inclusive Workforce Integration</h4>
-      </div>
-      <div class="desci-article-card">
-        <span class="novelty-badge">92%</span>
-        <span class="article-cat">Sociology</span>
-        <h4>Decolonizing the Caste Narrative: A Historical and Socio-Cultural Analysis</h4>
-      </div>
-      <div class="desci-article-card">
-        <span class="novelty-badge">92%</span>
-        <span class="article-cat">AI & Technology</span>
-        <h4>Bio-Integrated Smart Villages 3.0: A Quantum-Enhanced Paradigm</h4>
-      </div>
-      <div class="desci-article-card">
-        <span class="novelty-badge">92%</span>
-        <span class="article-cat">Geopolitics</span>
-        <h4>The Codex of Orchestrated Turbulence: A Neoteric Lexicon</h4>
-      </div>
-      <div class="desci-article-card">
-        <span class="novelty-badge">91%</span>
-        <span class="article-cat">Security</span>
-        <h4>Foreign Funding and Enhanced National Security: FCRA Reforms Analysis</h4>
-      </div>
-      <div class="desci-article-card">
-        <span class="novelty-badge">91%</span>
-        <span class="article-cat">Geopolitics</span>
-        <h4>Silicon Alps — How Switzerland Redefined Power in a Digital World</h4>
-      </div>
-      <div class="desci-article-card">
-        <span class="novelty-badge">91%</span>
-        <span class="article-cat">Sociology</span>
-        <h4>Vedic Renaissance: Livelihoods and Ventures in Eco-Spiritual Homes</h4>
-      </div>
-      <div class="desci-article-card">
-        <span class="novelty-badge">90%</span>
-        <span class="article-cat">Geopolitics</span>
-        <h4>Unpacking the USCIRF Report on India: A Critical Analysis of Narratives</h4>
-      </div>
-      <div class="desci-article-card">
-        <span class="novelty-badge">90%</span>
-        <span class="article-cat">Sociology</span>
-        <h4>Debunking Civilizational Myths: An Expanded Ready Reckoner</h4>
-      </div>
+<div class="desci-article-card perfect">
+<span class="novelty-badge perfect-badge">100%</span>
+<span class="article-cat">Economy</span>
+<h4>The RIC Nexus — Tripartite Circular Economy & Digital Trade Ecosystem</h4>
+</div>
+<div class="desci-article-card perfect">
+<span class="novelty-badge perfect-badge">100%</span>
+<span class="article-cat">Geopolitics</span>
+<h4>Strategic Continuity: Ancient Indian Wisdom and Contemporary Military Praxis</h4>
+</div>
+<div class="desci-article-card perfect">
+<span class="novelty-badge perfect-badge">100%</span>
+<span class="article-cat">Security</span>
+<h4>The Shadow Doctrine: Guns, Dams, and Diplomacy in Asymmetric Conflict</h4>
+</div>
+<div class="desci-article-card perfect">
+<span class="novelty-badge perfect-badge">100%</span>
+<span class="article-cat">Security</span>
+<h4>Reverse Proxy Warfare: A Novel Strategy for Subverting State-Sponsored Terrorism</h4>
+</div>
+<div class="desci-article-card">
+<span class="novelty-badge">99%</span>
+<span class="article-cat">Economy</span>
+<h4>The Positive Staircase Model: A Decentralized Framework for Employment</h4>
+</div>
+<div class="desci-article-card">
+<span class="novelty-badge">98%</span>
+<span class="article-cat">Sociology</span>
+<h4>Resilient by Design: Ethical Lessons from Conflict Zones for Sustainable Employment</h4>
+</div>
+<div class="desci-article-card">
+<span class="novelty-badge">97%</span>
+<span class="article-cat">AI & Technology</span>
+<h4>Addressing Anomalies in Defining Plagiarized Content: A Framework for Fair Attribution</h4>
+</div>
+<div class="desci-article-card">
+<span class="novelty-badge">97%</span>
+<span class="article-cat">Economy</span>
+<h4>Helix Kallol Protocol (HKP): A Legally Enforceable System for Ethical Employment</h4>
+</div>
+<div class="desci-article-card">
+<span class="novelty-badge">96%</span>
+<span class="article-cat">Geopolitics</span>
+<h4>The Sovereign Fulcrum: India's Doctrinal Metamorphosis in Asymmetric Contestation</h4>
+</div>
+<div class="desci-article-card">
+<span class="novelty-badge">96%</span>
+<span class="article-cat">Sociology</span>
+<h4>Contested Legacies: Analyzing the Impact of Controversial Legislations</h4>
+</div>
+<div class="desci-article-card">
+<span class="novelty-badge">95%</span>
+<span class="article-cat">Sociology</span>
+<h4>The Indo-China Renaissance Initiative (ICRI): A Neo-Humanistic Framework</h4>
+</div>
+<div class="desci-article-card">
+<span class="novelty-badge">95%</span>
+<span class="article-cat">AI & Technology</span>
+<h4>HELIX: India's Neural-Powered Predictive Security Framework to Combat Crime</h4>
+</div>
+<div class="desci-article-card">
+<span class="novelty-badge">95%</span>
+<span class="article-cat">Sociology</span>
+<h4>Shakti as Sovereign Wisdom: Bharat's Enduring Governance Ethos</h4>
+</div>
+<div class="desci-article-card">
+<span class="novelty-badge">94%</span>
+<span class="article-cat">Security</span>
+<h4>The Silent War: Rhetoric, Cognition, and Global Conflict in the 21st Century</h4>
+</div>
+<div class="desci-article-card">
+<span class="novelty-badge">94%</span>
+<span class="article-cat">Geopolitics</span>
+<h4>Narrative Quantum Entanglement in Geopolitical Systems (NQEQS)</h4>
+</div>
+<div class="desci-article-card">
+<span class="novelty-badge">94%</span>
+<span class="article-cat">Sociology</span>
+<h4>The Janvarta Framework: Reimagining Governance Through Ancient Wisdom</h4>
+</div>
+<div class="desci-article-card">
+<span class="novelty-badge">93%</span>
+<span class="article-cat">AI & Technology</span>
+<h4>Employment Shopping — AI-Powered Mobile Hubs for Inclusive Workforce Integration</h4>
+</div>
+<div class="desci-article-card">
+<span class="novelty-badge">92%</span>
+<span class="article-cat">Sociology</span>
+<h4>Decolonizing the Caste Narrative: A Historical and Socio-Cultural Analysis</h4>
+</div>
+<div class="desci-article-card">
+<span class="novelty-badge">92%</span>
+<span class="article-cat">AI & Technology</span>
+<h4>Bio-Integrated Smart Villages 3.0: A Quantum-Enhanced Paradigm</h4>
+</div>
+<div class="desci-article-card">
+<span class="novelty-badge">92%</span>
+<span class="article-cat">Geopolitics</span>
+<h4>The Codex of Orchestrated Turbulence: A Neoteric Lexicon</h4>
+</div>
+<div class="desci-article-card">
+<span class="novelty-badge">91%</span>
+<span class="article-cat">Security</span>
+<h4>Foreign Funding and Enhanced National Security: FCRA Reforms Analysis</h4>
+</div>
+<div class="desci-article-card">
+<span class="novelty-badge">91%</span>
+<span class="article-cat">Geopolitics</span>
+<h4>Silicon Alps — How Switzerland Redefined Power in a Digital World</h4>
+</div>
+<div class="desci-article-card">
+<span class="novelty-badge">91%</span>
+<span class="article-cat">Sociology</span>
+<h4>Vedic Renaissance: Livelihoods and Ventures in Eco-Spiritual Homes</h4>
+</div>
+<div class="desci-article-card">
+<span class="novelty-badge">90%</span>
+<span class="article-cat">Geopolitics</span>
+<h4>Unpacking the USCIRF Report on India: A Critical Analysis of Narratives</h4>
+</div>
+<div class="desci-article-card">
+<span class="novelty-badge">90%</span>
+<span class="article-cat">Sociology</span>
+<h4>Debunking Civilizational Myths: An Expanded Ready Reckoner</h4>
+</div>
 
-    </div>
+</div>
 
-    <div style="text-align:center;margin-top:40px;">
-      <a href="https://helixoriginator.github.io/World-Largest-Independent-Digital-Encyclopedia-Helix-Library/" target="_blank" class="btn">View All Articles with DOIs →</a>
-    </div>
-  </div>
+<div style="text-align:center;margin-top:40px;">
+<a href="https://helixoriginator.github.io/World-Largest-Independent-Digital-Encyclopedia-Helix-Library/" target="_blank" class="btn">View All Articles with DOIs →</a>
+</div>
+</div>
 </section>
 
 <!-- ─── POLICY CLARITY ARCHITECTURE ─── -->
 <section class="pca-section">
+<div class="container">
+<div class="pca-badge">Original Framework · First Implementation in India</div>
+<h2 class="section-title" style="color:white;">Policy Clarity Architecture</h2>
+<p class="section-subtitle">
+A world-original governance framework that transforms complex government policy into structured,
+evidence-based citizen knowledge — without rhetoric, without spin, without political agenda.
+</p>
+
+<div class="pca-philosophy">
+<div class="pca-phil-card">
+<span class="pca-phil-icon">🎯</span>
+<h4>"Clarity Over Conversion"</h4>
+<p>Goal is informed citizens, not converted supporters. Understanding, not agreement. A radical departure from both propaganda and opposition rhetoric.</p>
+</div>
+<div class="pca-phil-card">
+<span class="pca-phil-icon">⚖️</span>
+<h4>Never Dismissive</h4>
+<p>Citizen concerns are acknowledged respectfully. No labeling, no rhetoric. Every concern receives a structured, evidence-based response.</p>
+</div>
+<div class="pca-phil-card">
+<span class="pca-phil-icon">🔍</span>
+<h4>Limitations Stated</h4>
+<p>Known implementation gaps and challenges are documented transparently. Honesty about what works and what doesn't builds genuine trust.</p>
+</div>
+<div class="pca-phil-card">
+<span class="pca-phil-icon">📋</span>
+<h4>100% Source-Referenced</h4>
+<p>Every claim traced to official gazette notifications, ministry documents, CAG reports, or parliamentary committee findings — never opinion.</p>
+</div>
+</div>
+
+<div class="pca-three-layers">
+<h3>The Three-Layer Framework</h3>
+<p class="pca-layer-subtitle">A replicable architecture deployable across every government scheme in India</p>
+<div class="layers-grid">
+<div class="layer-card">
+<div class="layer-num">01</div>
+<h4>Plain Language Explainer</h4>
+<p>Policy explained without jargon, without spin — just the essential facts a citizen needs to know, structured for maximum accessibility.</p>
+</div>
+<div class="layer-card">
+<div class="layer-num">02</div>
+<h4>Three-Column Concern Analysis</h4>
+<p>Every citizen concern analyzed across three columns: <strong>The Claim</strong> → <strong>Official Position</strong> → <strong>Confusion Source</strong>. Separates perception from documentation from reality gaps.</p>
+</div>
+<div class="layer-card">
+<div class="layer-num">03</div>
+<h4>Transparency Dashboard</h4>
+<p>Full accountability — sources, methodology, limitations, and update history publicly displayed. Trust built through radical openness.</p>
+</div>
+</div>
+</div>
+
+<div class="pca-live-implementations">
+<h3 style="font-family:'Cinzel',serif;color:var(--soft-white);text-align:center;font-size:1.2rem;margin-bottom:8px;">Live Implementations — Proof of Concept at Scale</h3>
+<p style="text-align:center;color:rgba(255,255,255,0.5);font-size:0.9rem;margin-bottom:30px;font-style:italic;">Already deployed across two major national schemes — not a proposal, a working reality</p>
+<div class="pca-impl-grid">
+<div class="pca-impl-card">
+<div class="pca-impl-num">01</div>
+<div class="pca-impl-badge">✅ Live</div>
+<h4>PMAY Policy Clarifier</h4>
+<p>Pradhan Mantri Awas Yojana — eligibility, subsidy structure, common concerns and transparency dashboard. India's first non-partisan AI-powered housing policy clarification portal.</p>
+<a href="https://helixoriginator.github.io/pmay-policy-clarification-ai/" target="_blank" class="pub-doi-link">Visit PMAY Clarifier →</a>
+</div>
+<div class="pca-impl-card">
+<div class="pca-impl-num">02</div>
+<div class="pca-impl-badge">✅ Live</div>
+<h4>PM-KISAN Policy Clarification Framework</h4>
+<p>Pradhan Mantri Kisan Samman Nidhi — ₹6,000 annual DBT structure, eligibility criteria, documented implementation challenges, and clause-based official source references for India's farmers.</p>
+<a href="https://helixoriginator.github.io/pm-kisan-policy-clarification-framework/" target="_blank" class="pub-doi-link">Visit PM-KISAN Clarifier →</a>
+</div>
+</div>
+</div>
+
+<div class="pca-scalability">
+<h3>Next — National Policy Clarity Infrastructure</h3>
+<p>With <strong style="color:var(--sovereign-gold-light);">two schemes already live</strong>, this framework is ready to scale across every major government programme in India:</p>
+<div class="scheme-tags">
+<span class="scheme-tag active">PMAY ✓ Live</span>
+<span class="scheme-tag active">PM-KISAN ✓ Live</span>
+<span class="scheme-tag">Ayushman Bharat</span>
+<span class="scheme-tag">Jan Dhan Yojana</span>
+<span class="scheme-tag">Ujjwala Yojana</span>
+<span class="scheme-tag">NEP 2020</span>
+<span class="scheme-tag">Jal Jeevan Mission</span>
+<span class="scheme-tag">Swachh Bharat</span>
+<span class="scheme-tag">Digital India</span>
+<span class="scheme-tag">Atmanirbhar Bharat</span>
+</div>
+</div>
+
+<div style="text-align:center;margin-top:50px;display:flex;gap:20px;justify-content:center;flex-wrap:wrap;">
+<a href="https://helixoriginator.github.io/pmay-policy-clarification-ai/" target="_blank" class="btn">PMAY Clarifier →</a>
+<a href="https://helixoriginator.github.io/pm-kisan-policy-clarification-framework/" target="_blank" class="btn" style="background:linear-gradient(135deg,var(--emerald-accent),var(--sovereign-gold));">PM-KISAN Clarifier →</a>
+</div>
+</div>
+</section>
+
+<!-- ─── SELECTED PUBLICATIONS ─── -->
+<section class="pubs-section" id="publications">
   <div class="container">
-    <div class="pca-badge">Original Framework · First Implementation in India</div>
-    <h2 class="section-title" style="color:white;">Policy Clarity Architecture</h2>
-    <p class="section-subtitle">
-      A world-original governance framework that transforms complex government policy into structured,
-      evidence-based citizen knowledge — without rhetoric, without spin, without political agenda.
-    </p>
+    <div class="pubs-badge">Peer-Reviewed · DOI Registered · Globally Indexed</div>
+    <h2 class="section-title" style="color:white;">Selected Academic Publications</h2>
+    <p class="section-subtitle">Research published across Zenodo, SSRN, IJISRT, and IJFMR — indexed on Google Scholar, ResearchGate, Semantic Scholar, CrossRef, and OpenAIRE</p>
 
-    <div class="pca-philosophy">
-      <div class="pca-phil-card">
-        <span class="pca-phil-icon">🎯</span>
-        <h4>"Clarity Over Conversion"</h4>
-        <p>Goal is informed citizens, not converted supporters. Understanding, not agreement. A radical departure from both propaganda and opposition rhetoric.</p>
+    <!-- ZENODO -->
+    <div class="pub-platform-block">
+      <div class="pub-platform-header">
+        <span class="pub-platform-icon">🔬</span>
+        <h3>Zenodo Open Repository <span class="pub-platform-tag">CERN · OpenAIRE · Google Scholar Indexed</span></h3>
       </div>
-      <div class="pca-phil-card">
-        <span class="pca-phil-icon">⚖️</span>
-        <h4>Never Dismissive</h4>
-        <p>Citizen concerns are acknowledged respectfully. No labeling, no rhetoric. Every concern receives a structured, evidence-based response.</p>
-      </div>
-      <div class="pca-phil-card">
-        <span class="pca-phil-icon">🔍</span>
-        <h4>Limitations Stated</h4>
-        <p>Known implementation gaps and challenges are documented transparently. Honesty about what works and what doesn't builds genuine trust.</p>
-      </div>
-      <div class="pca-phil-card">
-        <span class="pca-phil-icon">📋</span>
-        <h4>100% Source-Referenced</h4>
-        <p>Every claim traced to official gazette notifications, ministry documents, CAG reports, or parliamentary committee findings — never opinion.</p>
-      </div>
-    </div>
+      <div class="pub-cards-grid">
 
-    <div class="pca-three-layers">
-      <h3>The Three-Layer Framework</h3>
-      <p class="pca-layer-subtitle">A replicable architecture deployable across every government scheme in India</p>
-      <div class="layers-grid">
-        <div class="layer-card">
-          <div class="layer-num">01</div>
-          <h4>Plain Language Explainer</h4>
-          <p>Policy explained without jargon, without spin — just the essential facts a citizen needs to know, structured for maximum accessibility.</p>
+        <div class="pub-card-item world-first">
+          <div class="pub-card-top">
+            <span class="pub-type-tag" style="background:rgba(198,165,74,0.2);color:var(--sovereign-gold-light);border-color:rgba(198,165,74,0.4);">🌍 World First · Sanatan Dharma</span>
+            <span class="pub-year-tag">Aug 2025</span>
+          </div>
+          <h4>SANATANA SAMYATA: The Complete Dharma Defense Manual — Comprehensive Responses to Misconceptions About Hindu Dharma</h4>
+          <p>Confirmed by Zenodo as <strong style="color:var(--sovereign-gold-light);">"the world's first comprehensive ready reckoner"</strong> that systematically addresses and dispels widespread myths about Hinduism. Evidence drawn from Hindu scriptures, historical records, and contemporary social realities. Counters narratives used by conversion lobbies. <strong style="color:rgba(255,255,255,0.8);">764 Views · 444 Downloads</strong> — exceptional reach for independent research.</p>
+          <div class="samyata-stats">
+            <span>👁️ 764 Views</span>
+            <span>📥 444 Downloads</span>
+            <span>🌍 Google Confirmed — World First</span>
+          </div>
+          <a href="https://doi.org/10.5281/zenodo.16714489" target="_blank" class="pub-doi-link">DOI: 10.5281/zenodo.16714489 →</a>
         </div>
-        <div class="layer-card">
-          <div class="layer-num">02</div>
-          <h4>Three-Column Concern Analysis</h4>
-          <p>Every citizen concern analyzed across three columns: <strong>The Claim</strong> → <strong>Official Position</strong> → <strong>Confusion Source</strong>. Separates perception from documentation from reality gaps.</p>
+
+        <div class="pub-card-item featured">
+          <div class="pub-card-top">
+            <span class="pub-type-tag">Governance · AI · Welfare</span>
+            <span class="pub-year-tag">July 2025</span>
+          </div>
+          <h4>From Elite Capture to Citizen Empowerment: India's Dual-Track Governance Revolution and the Digital Pathway to Universal Inclusion</h4>
+          <p>Introduces "Aspirational Governance" concept. Analyses 1,200+ Padma Award recipients (2014–2024) and 800M+ beneficiaries. Proposes the world-first "One-Roster for Last-Mile Deprivation" (ORLMD) — an AI-blockchain predictive welfare ecosystem.</p>
+          <a href="https://doi.org/10.5281/zenodo.15880176" target="_blank" class="pub-doi-link">DOI: 10.5281/zenodo.15880176 →</a>
         </div>
-        <div class="layer-card">
-          <div class="layer-num">03</div>
-          <h4>Transparency Dashboard</h4>
-          <p>Full accountability — sources, methodology, limitations, and update history publicly displayed. Trust built through radical openness.</p>
+
+        <div class="pub-card-item featured">
+          <div class="pub-card-top">
+            <span class="pub-type-tag">AI Governance · Democracy</span>
+            <span class="pub-year-tag">Feb 2026</span>
+          </div>
+          <h4>Civic Reflexivity Engines: A New Framework for Democratic AI Governance</h4>
+          <p>Introduces a world-first institutional category — Civic Reflexivity Engines (CREs). Proposes reflexive co-constitution as AI and civic judgment continuously co-evolve. Redefines democracy as a metabolic system.</p>
+          <a href="https://doi.org/10.5281/zenodo.18524801" target="_blank" class="pub-doi-link">DOI: 10.5281/zenodo.18524801 →</a>
         </div>
+
+        <div class="pub-card-item">
+          <div class="pub-card-top">
+            <span class="pub-type-tag">25 Articles · DeSci Verified</span>
+            <span class="pub-year-tag">94.9% Avg Novelty</span>
+          </div>
+          <h4>DeSci Labs Novelty Benchmark Collection</h4>
+          <p>25 research articles verified by DeSci Labs, Switzerland — all scoring 90%+ on Novelty & Content Score. 4 articles achieving perfect 100% novelty. Spanning geopolitics, AI, economy, Sanatan Dharma, and civilisational studies.</p>
+          <a href="https://doi.org/10.5281/zenodo.17417996" target="_blank" class="pub-doi-link">DOI: 10.5281/zenodo.17417996 →</a>
+        </div>
+
+        <div class="pub-card-item">
+          <div class="pub-card-top">
+            <span class="pub-type-tag">Zenodo Research</span>
+            <span class="pub-year-tag">2025</span>
+          </div>
+          <h4>Research Publication — Zenodo Repository</h4>
+          <p>Peer-indexed open-access publication contributing to governance, civilisational studies, and policy innovation frameworks — part of the 256+ DOI portfolio on Zenodo.</p>
+          <a href="https://doi.org/10.5281/zenodo.16414167" target="_blank" class="pub-doi-link">DOI: 10.5281/zenodo.16414167 →</a>
+        </div>
+
       </div>
     </div>
 
-    <div class="pca-scalability">
-      <h3>National Scalability Potential</h3>
-      <p>This framework is the <strong>first of its kind in India</strong> — and can be replicated across every major government scheme to create a National Policy Clarity Infrastructure:</p>
-      <div class="scheme-tags">
-        <span class="scheme-tag active">PMAY ✓ Live</span>
-        <span class="scheme-tag">Ayushman Bharat</span>
-        <span class="scheme-tag">Jan Dhan Yojana</span>
-        <span class="scheme-tag">Ujjwala Yojana</span>
-        <span class="scheme-tag">NEP 2020</span>
-        <span class="scheme-tag">Jal Jeevan Mission</span>
-        <span class="scheme-tag">PM-KISAN</span>
-        <span class="scheme-tag">Swachh Bharat</span>
-        <span class="scheme-tag">Digital India</span>
-        <span class="scheme-tag">Atmanirbhar Bharat</span>
+    <!-- SSRN -->
+    <div class="pub-platform-block">
+      <div class="pub-platform-header">
+        <span class="pub-platform-icon">📚</span>
+        <h3>SSRN — Social Science Research Network <span class="pub-platform-tag">Elsevier · Used by Harvard, Oxford, Top Law Schools</span></h3>
+      </div>
+      <div class="pub-cards-grid">
+
+        <div class="pub-card-item">
+          <div class="pub-card-top">
+            <span class="pub-type-tag">National Security · Defence</span>
+            <span class="pub-year-tag">2025</span>
+          </div>
+          <h4>Śāstra and Śakti: Analysis of Operation Sindoor</h4>
+          <p>Published on SSRN's Conflict Studies eJournal. Analyses India's military doctrine through the lens of ancient strategic wisdom and contemporary security posture.</p>
+          <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5286196" target="_blank" class="pub-doi-link">View on SSRN →</a>
+        </div>
+
+        <div class="pub-card-item">
+          <div class="pub-card-top">
+            <span class="pub-type-tag">Internal Security · Policy</span>
+            <span class="pub-year-tag">Feb 2025</span>
+          </div>
+          <h4>Countering Left-Wing Extremism: India's Policy Shift</h4>
+          <p>Examines India's evolving counter-insurgency strategy and policy framework for addressing left-wing extremism through governance, development, and security integration.</p>
+          <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5155509" target="_blank" class="pub-doi-link">View on SSRN →</a>
+        </div>
+
+        <div class="pub-card-item">
+          <div class="pub-card-top">
+            <span class="pub-type-tag">SSRN Research</span>
+            <span class="pub-year-tag">2025</span>
+          </div>
+          <h4>SSRN Research Publication</h4>
+          <p>Published on SSRN — one of the world's most prestigious social science preprint platforms — contributing to the growing body of original governance and policy research.</p>
+          <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5338886" target="_blank" class="pub-doi-link">View on SSRN →</a>
+        </div>
+
       </div>
     </div>
 
-    <div style="text-align:center;margin-top:50px;">
-      <a href="https://helixoriginator.github.io/pmay-policy-clarification-ai/#explainer" target="_blank" class="btn">Explore PMAY Policy Clarifier — First Implementation →</a>
+    <!-- JOURNALS -->
+    <div class="pub-platform-block">
+      <div class="pub-platform-header">
+        <span class="pub-platform-icon">📄</span>
+        <h3>Peer-Reviewed Journals <span class="pub-platform-tag">CrossRef DOI · Google Scholar · ResearchGate · Semantic Scholar</span></h3>
+      </div>
+      <div class="pub-cards-grid">
+
+        <div class="pub-card-item">
+          <div class="pub-card-top">
+            <span class="pub-type-tag">IJFMR · Impact Factor 9.24</span>
+            <span class="pub-year-tag">Dec 2024</span>
+          </div>
+          <h4>Constructive vs. Extreme Rhetoric in Managerial Communication: A Holistic Framework Integrating Rhetorical Devices, Emotional Intelligence, and Eastern Philosophy</h4>
+          <p>Published in International Journal For Multidisciplinary Research (E-ISSN: 2582-2160, Impact Factor 9.24). CrossRef DOI registered. Indexed on Google Scholar, ResearchGate, Zenodo, WorldCat, Semantic Scholar.</p>
+          <a href="https://www.ijfmr.com/research-paper.php?id=32335" target="_blank" class="pub-doi-link">DOI: 10.36948/ijfmr.2024.v06i06.32335 →</a>
+        </div>
+
+        <div class="pub-card-item">
+          <div class="pub-card-top">
+            <span class="pub-type-tag">IJISRT · Google Scholar</span>
+            <span class="pub-year-tag">Nov 2024</span>
+          </div>
+          <h4>Advancing Rhetorical Strategies in Virtual Litigation: Balancing Persuasion and Equity in Digital Courtrooms</h4>
+          <p>Published in International Journal of Innovative Science and Research Technology (Vol. 9, Issue 11). Indexed on Google Scholar, Scribd, Semantic Scholar, ResearchGate, PlumX Metrics.</p>
+          <a href="https://ijisrt.com/advancing-rhetorical-strategies-in-virtual-litigation-balancing-persuasion-and-equity-in-digital-courtrooms" target="_blank" class="pub-doi-link">DOI: 10.38124/ijisrt/IJISRT24NOV1224 →</a>
+        </div>
+
+      </div>
     </div>
+
+    <div class="pubs-summary">
+      <div class="pubs-sum-stat">
+        <span class="psum-num">256+</span>
+        <span class="psum-label">Total DOIs</span>
+      </div>
+      <div class="pubs-sum-stat">
+        <span class="psum-num">4</span>
+        <span class="psum-label">Platforms</span>
+      </div>
+      <div class="pubs-sum-stat">
+        <span class="psum-num">9.24</span>
+        <span class="psum-label">Impact Factor</span>
+      </div>
+      <div class="pubs-sum-stat">
+        <span class="psum-num">5000+</span>
+        <span class="psum-label">Downloads</span>
+      </div>
+    </div>
+
   </div>
 </section>
 
 <!-- ─── FOOTER ─── -->
 <footer id="contact">
-  <div class="container">
-    <div class="footer-content">
+<div class="container">
+<div class="footer-content">
 
-      <div class="footer-col">
-        <h4>Kallol Chakrabarti</h4>
-        <p>Global Governance Architect</p>
-        <p>Civilisational Systems Theorist</p>
-        <p>Institutional Design Strategist</p>
-        <p>Lucknow, Uttar Pradesh, India</p>
-      </div>
+<div class="footer-col">
+<h4>Kallol Chakrabarti</h4>
+<p>Global Governance Architect</p>
+<p>Civilisational Systems Theorist</p>
+<p>Institutional Design Strategist</p>
+<p>Lucknow, Uttar Pradesh, India</p>
+</div>
 
-      <div class="footer-col">
-        <h4>Recognition</h4>
-        <p>🏆 National IPA Award — Shortlisted (Dec 2025)</p>
-        <p>🌐 ILO/UN — Concept Acknowledged Innovative</p>
-        <p>🔬 DeSci Labs — 25 Articles, 94.9% Avg Novelty</p>
-        <p>📄 256+ DOIs on Zenodo</p>
-        <p>📥 5,000+ Global Downloads</p>
-        <p>🤖 25+ Google AI Validations</p>
-      </div>
+<div class="footer-col">
+<h4>Recognition</h4>
+<p>🏆 National IPA Award — Shortlisted (Dec 2025)</p>
+<p>🌐 ILO/UN — Concept Acknowledged Innovative</p>
+<p>🔬 DeSci Labs — 25 Articles, 94.9% Avg Novelty</p>
+<p>📄 256+ DOIs on Zenodo</p>
+<p>📥 5,000+ Global Downloads</p>
+<p>🤖 25+ Google AI Validations</p>
+</div>
 
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <a href="mailto:kallolchitralimagicpen@gmail.com">kallolchitralimagicpen@gmail.com</a>
-        <a href="https://orcid.org/0009-0007-4971-8936" target="_blank">ORCID: 0009-0007-4971-8936</a>
-        <a href="https://doi.org/10.5281/zenodo.18524801" target="_blank">DOI: 10.5281/zenodo.18524801</a>
-      </div>
+<div class="footer-col">
+<h4>Contact</h4>
+<a href="mailto:kallolchitralimagicpen@gmail.com">kallolchitralimagicpen@gmail.com</a>
+<a href="https://orcid.org/0009-0007-4971-8936" target="_blank">ORCID: 0009-0007-4971-8936</a>
+<a href="https://doi.org/10.5281/zenodo.18524801" target="_blank">DOI: 10.5281/zenodo.18524801</a>
+</div>
 
-      <div class="footer-col">
-        <h4>Key Platforms</h4>
-        <a href="https://bharat-governance.netlify.app/" target="_blank">Bharat Governance Interactive</a>
-        <a href="https://sanatan-answers.netlify.app/" target="_blank">Sanatan Answers</a>
-        <a href="https://sanatan-encyclopedia-1.netlify.app/" target="_blank">Sanatan Encyclopedia</a>
-        <a href="https://helixoriginator.github.io/Pioneer-Frameworks-Kallol-Chakrabarti/" target="_blank">Pioneer Frameworks</a>
-      </div>
+<div class="footer-col">
+<h4>Key Platforms</h4>
+<a href="https://bharat-governance.netlify.app/" target="_blank">Bharat Governance Interactive</a>
+<a href="https://sanatan-answers.netlify.app/" target="_blank">Sanatan Answers</a>
+<a href="https://sanatan-encyclopedia-1.netlify.app/" target="_blank">Sanatan Encyclopedia</a>
+<a href="https://helixoriginator.github.io/Pioneer-Frameworks-Kallol-Chakrabarti/" target="_blank">Pioneer Frameworks</a>
+</div>
 
-    </div>
+</div>
 
-    <div class="footer-divider"></div>
+<div class="footer-divider"></div>
 
-    <div class="copyright">
-      <p>&copy; 2026 Kallol Chakrabarti. All rights reserved.</p>
-      <p>Independent civilisational governance architecture contributing to Viksit Bharat 2047 and advancing globally adaptable models of ethical statecraft.</p>
-    </div>
+<div class="copyright">
+<p>&copy; 2026 Kallol Chakrabarti. All rights reserved.</p>
+<p>Independent civilisational governance architecture contributing to Viksit Bharat 2047 and advancing globally adaptable models of ethical statecraft.</p>
+</div>
 
-    <div class="india-stripe"></div>
-  </div>
+<div class="india-stripe"></div>
+</div>
 </footer>
 
 </body>
